@@ -1,0 +1,40 @@
+
+.more-link{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-family: @nsw-demibold;
+
+    span{
+        .square(24px);
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+    &.down{
+        font-size: 18px;
+        text-transform: capitalize;
+        span{
+            transform: rotate(90deg);
+            background-position: center;
+            display: block;
+            margin: 7px auto 0 auto;
+            padding-top: 5px;
+        }
+    }
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    &.info{
+        color: @brand-info;
+    }
+    &.primary{
+        color: @brand-primary;
+    }
+    &.danger{
+        color: @brand-danger;
+    }
+}

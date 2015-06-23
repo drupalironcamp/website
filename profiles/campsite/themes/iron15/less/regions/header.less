@@ -1,0 +1,93 @@
+
+#page-header{
+    position: relative;
+    background-color: @gray;
+    margin-top: -60px;
+
+    @media (min-width: @grid-float-breakpoint){
+        margin-top: 0;
+    }
+
+    .container{
+        position: relative; // limiter
+        min-height: 250px;
+        padding-top: 90px;
+        @media (min-width: @grid-float-breakpoint){
+            height: 240px;
+            padding-top: 70px;
+        }
+    }
+
+    .logo{
+      z-index: 9999;
+    }
+
+}
+
+
+.logo-wrap{
+    .square(73px);
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -30px; // centering the element horizontally
+    border-radius: 128px;
+    text-align: center;
+    z-index: 1;
+
+    .svg-iron-logo{ //using background image - faster than inline svg
+        .square(73px);
+        display: inline-block;
+        background-size: 100%;
+    }
+
+    @media (min-width: @grid-float-breakpoint){
+        top: -52px;
+        .square(148px);
+        margin-left: -74px;
+        .svg-iron-logo{
+            .square(108px);
+        }
+    }
+}
+
+//** Graphics
+.banner-img{
+    position: absolute;
+    top: -360px;
+    left: 50%;
+    margin-left: -280px;
+    @media (min-width: @grid-float-breakpoint) {
+        top: -260px;
+        margin-left: -220px;
+    }
+}
+
+//** hardcoded LEAD
+.lead{
+    .center-block;
+    max-width: 340px;
+    font-family: @nsw-bookbold;
+    position: relative;
+    z-index: 50;
+    .btn{
+        pointer-events: none;
+        vertical-align: top;
+    }
+    @media (min-width: @grid-float-breakpoint) {
+        max-width: 560px;
+    }
+}
+
+.site-name{
+    .fontzilla;
+    display: block;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.camp-location{
+    font-size: 24px;
+    line-height: 34px;
+}

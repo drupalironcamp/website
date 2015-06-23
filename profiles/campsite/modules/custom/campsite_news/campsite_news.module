@@ -1,0 +1,24 @@
+<?php
+/**
+ * @file
+ * Code for the CampSite - News feature.
+ */
+
+include_once 'campsite_news.features.inc';
+
+function campsite_news_date_formats() {
+  return array(
+    // Creates a new format for a new, custom format type.
+    array(
+      'type' => 'campsite_short_m_d_y',
+      'format' => 'F d. Y',
+      'locales' => array(),
+    ),
+  );
+}
+
+function campsite_news_date_format_types() {
+ return array(
+   'campsite_short_m_d_y' => t('Short - news'),
+ );
+}

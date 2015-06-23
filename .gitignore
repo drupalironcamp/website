@@ -1,11 +1,5 @@
+# Ignore configuration files that may contain sensitive information.
+
 # Ignore paths that contain user-generated content.
-docroot/files
-docroot/sites/*/files
-docroot/sites/*/private
-
-.idea
-docroot/.bundle
-docroot/vendor
-
-# Ignore sass cache
-.sass-cache
+sites/*/files
+sites/*/private

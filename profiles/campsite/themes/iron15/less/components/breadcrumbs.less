@@ -1,0 +1,34 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+
+.breadcrumb {
+  padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
+  margin-bottom: @line-height-computed;
+  list-style: none;
+  font-family: @nsw-book;
+  position: relative;
+  z-index: 60;
+
+  a{
+    color: @brand-danger-alt;
+  }
+
+  > li > a:before{
+    content: "";
+    display: inline-block;
+    .size(15px, 8px);
+  }
+
+  > li {
+    display: inline-block;
+
+    + li:before {
+      content: "@{breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 5px;
+      color: @breadcrumb-color;
+    }
+  }
+
+}

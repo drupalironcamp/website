@@ -1,0 +1,42 @@
+
+.view-user-list{
+
+
+
+    // front page featured attendees
+    .front &{
+        &:extend(.view-circled-teasers all);
+        margin-bottom: 80px;
+
+        .view-content{
+            margin-bottom: 5px;
+           > div{
+                width: 160px;
+            }
+        }
+
+        .view-footer{
+            padding-bottom: 25px;
+        }
+
+        .user-fullname{
+            font-size: 14px;
+            margin-bottom: 20px;
+            font-family: @nsw-medium;
+            line-height: 1.2;
+        }
+        .user-organization{
+            font-size: 12px;
+        }
+
+        .user-image{
+            .square(140px);
+            .img-circle;
+            .center-block;
+            border: 2px solid white;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+    }
+
+}
