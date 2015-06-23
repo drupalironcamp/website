@@ -1,5 +1,5 @@
 http://www.{default}/:
-  to: http://{default}/docroot
+  to: http://{default}/
   type: redirect
 http://{default}/:
   cache:
