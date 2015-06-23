@@ -1,0 +1,10 @@
+http://www.{default}/:
+  to: http://{default}/docroot
+  type: redirect
+http://{default}/:
+  cache:
+    enabled: true
+  ssi:
+    enabled: false
+  type: upstream
+  upstream: php:php
