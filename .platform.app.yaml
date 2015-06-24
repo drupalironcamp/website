@@ -1,2 +1,3 @@
-name: iron_camp
+name: ironcamp
 toolstack: "php:drupal"
+disk: 2048
