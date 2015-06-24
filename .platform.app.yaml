@@ -14,6 +14,10 @@ mounts:
     "/public/sites/default/files": "shared:files/files"
     "/tmp": "shared:files/tmp"
     "/private": "shared:files/private"
+hooks:
+    # We run deploy hook after your application has been deployed and started.
+    build: "cd public ; drush site-install campsite --account-pass=admin --site-name="Iron Camp"; drush fra -y"
+    deploy: "cd public; drush cc all"
 crons:
     drupal:
         spec: "*/20 * * * *"
