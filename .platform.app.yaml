@@ -1,0 +1,22 @@
+name: front
+toolstack: "php:drupal"
+relationships:
+    database: "mysql:mysql"
+    solr: "solr:solr"
+    redis: "redis:redis"
+web:
+    document_root: "/"
+    passthru: "/index.php"
+disk: 2048
+mounts:
+    "/public/sites/default/files": "shared:files/files"
+    "/tmp": "shared:files/tmp"
+    "/private": "shared:files/private"
+hooks:
+    # We run deploy hook after your application has been deployed and started.
+    deploy: "cd public ; drush site-install campsite2015 --account-pass=admin"
+
+crons:
+    drupal:
+        spec: "*/20 * * * *"
+        cmd: "cd public ; drush core-cron"
