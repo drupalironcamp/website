@@ -1,3 +1,20 @@
-name: ironcamp
+name: php
 toolstack: "php:drupal"
+access:
+    ssh: contributor
+relationships:
+    database: "mysql:mysql"
+    solr: "solr:solr"
+    redis: "redis:redis"
+web:
+    document_root: "/"
+    passthru: "/index.php"
 disk: 2048
+mounts:
+    "/public/sites/default/files": "shared:files/files"
+    "/tmp": "shared:files/tmp"
+    "/private": "shared:files/private"
+crons:
+    drupal:
+        spec: "*/20 * * * *"
+        cmd: "cd public ; drush core-cron"
