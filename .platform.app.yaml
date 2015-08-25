@@ -16,7 +16,7 @@ mounts:
     "/public/sites/default/files": "shared:files/files"
     "/tmp": "shared:files/tmp"
     "/private": "shared:files/private"
-hooks:
+# hooks:
     # We run deploy hook after your application has been deployed and started.
 #    deploy: |
 #      cd public
