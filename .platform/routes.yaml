@@ -1,3 +1,19 @@
+http://www.{default}/:
+  cache:
+    cookies:
+    - '*'
+    default_ttl: 0
+    enabled: true
+    headers:
+    - Accept
+    - Accept-Language
+  redirects:
+    expires: -1s
+    paths: {}
+  ssi:
+    enabled: false
+  type: upstream
+  upstream: php:php
 http://{default}/:
   redirects:
     expires: -1s
