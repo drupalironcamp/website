@@ -1,6 +1,1 @@
-http://www.{default}/:
-  redirects:
-    expires: -1s
-    paths: {}
-  to: http://www.{default}/
-  type: redirect
+{}
