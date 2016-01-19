@@ -202,7 +202,7 @@
 
 
         <div class="banner-img">
-            <img src="<?php print base_path() . path_to_theme() ?>/images/nga.png"/>
+            <img src="<?php print base_path() . path_to_theme() ?>/images/nga-2016.png"/>
         </div>
 
         <?php if (!empty($site_name)): ?>
