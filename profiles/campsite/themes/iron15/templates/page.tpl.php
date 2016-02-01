@@ -202,7 +202,7 @@
 
 
         <div class="banner-img">
-            <img src="<?php print base_path() . path_to_theme() ?>/images/nga.png"/>
+            <img src="<?php print base_path() . path_to_theme() ?>/images/nga-2016.png"/>
         </div>
 
         <?php if (!empty($site_name)): ?>
@@ -210,8 +210,8 @@
             <?php print l("<span class='site-name'>".$site_name."</span>", "<front>", array('html'=>TRUE)); ?>
 
             <div class="divider"></div>
-              <div class="camp-location"><?php print t('Budapest, Hungary');?></div>
-              <!-- <div class="btn btn-sm btn-warning"><?php print t('26-30th October, 2015');?></div> -->
+              <div class="camp-location"><?php print t('Prague, Czech Republic');?></div>
+               <div class="btn btn-sm btn-warning"><?php print t('November 24-27, 2016');?></div>
           </div>
         <?php endif; ?>
 
@@ -285,9 +285,9 @@
 
          <a href="<?php print $front_page; ?>" class="footer-logo svg-iron-logo">
            <span class="title">IRON CAMP</span>
-           2015
+           2016
          </a>
-         <div class="footer-message">2015 @ Built by the community
+         <div class="footer-message">2015-6 @ Built by the community
            <div class="footer-links">
             <?php print l(t('Disclaimer.'), 'disclaimer') . l(t('Code of conduct.'), 'node/16'); ?>
           </div>
