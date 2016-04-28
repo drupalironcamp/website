@@ -8,6 +8,7 @@ CONTENTS OF THIS FILE
  * Appearance
  * Developing for Drupal
 
+
 ABOUT DRUPAL
 ------------
 
