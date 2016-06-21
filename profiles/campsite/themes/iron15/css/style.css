@@ -7145,10 +7145,6 @@ fieldset[disabled] .pane-signup input.button.active {
   font-size: 22px;
   line-height: 35px;
 }
-.node-type-news .region-content .content ul,
-.node-type-page .region-content .content ul {
-  list-style: none;
-}
 .node-type-news .region-content .content ul li,
 .node-type-page .region-content .content ul li {
   font-size: 20px;
