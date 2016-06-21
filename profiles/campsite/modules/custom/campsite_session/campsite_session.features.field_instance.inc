@@ -10,7 +10,7 @@
 function campsite_session_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-session-body'
+  // Exported field_instance: 'node-session-body'.
   $field_instances['node-session-body'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -61,7 +61,7 @@ function campsite_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_date'
+  // Exported field_instance: 'node-session-field_session_date'.
   $field_instances['node-session-field_session_date'] = array(
     'bundle' => 'session',
     'deleted' => 0,
@@ -82,6 +82,7 @@ function campsite_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 5,
@@ -95,6 +96,7 @@ function campsite_session_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -127,7 +129,7 @@ function campsite_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_experience_level'
+  // Exported field_instance: 'node-session-field_session_experience_level'.
   $field_instances['node-session-field_session_experience_level'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -177,7 +179,7 @@ function campsite_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_further_resources'
+  // Exported field_instance: 'node-session-field_session_further_resources'.
   $field_instances['node-session-field_session_further_resources'] = array(
     'bundle' => 'session',
     'deleted' => 0,
@@ -225,7 +227,7 @@ function campsite_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_keywords'
+  // Exported field_instance: 'node-session-field_session_keywords'.
   $field_instances['node-session-field_session_keywords'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -279,7 +281,7 @@ function campsite_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_room'
+  // Exported field_instance: 'node-session-field_session_room'.
   $field_instances['node-session-field_session_room'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -329,7 +331,7 @@ function campsite_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_speakers'
+  // Exported field_instance: 'node-session-field_session_speakers'.
   $field_instances['node-session-field_session_speakers'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -382,7 +384,7 @@ function campsite_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_track'
+  // Exported field_instance: 'node-session-field_session_track'.
   $field_instances['node-session-field_session_track'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
@@ -432,7 +434,7 @@ function campsite_session_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-session-field_session_type'
+  // Exported field_instance: 'node-session-field_session_type'.
   $field_instances['node-session-field_session_type'] = array(
     'bundle' => 'session',
     'default_value' => NULL,

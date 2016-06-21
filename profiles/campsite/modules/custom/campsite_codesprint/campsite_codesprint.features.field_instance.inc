@@ -10,7 +10,7 @@
 function campsite_codesprint_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-codesprint-body'
+  // Exported field_instance: 'node-codesprint-body'.
   $field_instances['node-codesprint-body'] = array(
     'bundle' => 'codesprint',
     'default_value' => NULL,
@@ -61,7 +61,7 @@ function campsite_codesprint_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-codesprint-field_codesprint_date'
+  // Exported field_instance: 'node-codesprint-field_codesprint_date'.
   $field_instances['node-codesprint-field_codesprint_date'] = array(
     'bundle' => 'codesprint',
     'deleted' => 0,
@@ -82,6 +82,7 @@ function campsite_codesprint_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 2,
@@ -95,6 +96,7 @@ function campsite_codesprint_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -127,7 +129,7 @@ function campsite_codesprint_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-codesprint-field_codesprint_level'
+  // Exported field_instance: 'node-codesprint-field_codesprint_level'.
   $field_instances['node-codesprint-field_codesprint_level'] = array(
     'bundle' => 'codesprint',
     'default_value' => array(
@@ -181,7 +183,7 @@ function campsite_codesprint_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-codesprint-field_codesprint_organizers'
+  // Exported field_instance: 'node-codesprint-field_codesprint_organizers'.
   $field_instances['node-codesprint-field_codesprint_organizers'] = array(
     'bundle' => 'codesprint',
     'default_value' => NULL,
@@ -233,7 +235,7 @@ function campsite_codesprint_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-codesprint-field_codesprint_resources'
+  // Exported field_instance: 'node-codesprint-field_codesprint_resources'.
   $field_instances['node-codesprint-field_codesprint_resources'] = array(
     'bundle' => 'codesprint',
     'deleted' => 0,
@@ -281,7 +283,7 @@ function campsite_codesprint_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-codesprint-field_codesprint_room'
+  // Exported field_instance: 'node-codesprint-field_codesprint_room'.
   $field_instances['node-codesprint-field_codesprint_room'] = array(
     'bundle' => 'codesprint',
     'default_value' => array(

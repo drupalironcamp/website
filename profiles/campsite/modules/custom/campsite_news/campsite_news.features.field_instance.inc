@@ -10,7 +10,7 @@
 function campsite_news_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-news-body'
+  // Exported field_instance: 'node-news-body'.
   $field_instances['node-news-body'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -63,7 +63,7 @@ function campsite_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_news_link'
+  // Exported field_instance: 'node-news-field_news_link'.
   $field_instances['node-news-field_news_link'] = array(
     'bundle' => 'news',
     'default_value' => NULL,
@@ -128,7 +128,7 @@ function campsite_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-news-field_news_slideshow'
+  // Exported field_instance: 'node-news-field_news_slideshow'.
   $field_instances['node-news-field_news_slideshow'] = array(
     'bundle' => 'news',
     'deleted' => 0,

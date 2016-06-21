@@ -10,7 +10,7 @@
 function campsite_account_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'user-user-field_user_about_me'
+  // Exported field_instance: 'user-user-field_user_about_me'.
   $field_instances['user-user-field_user_about_me'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -56,7 +56,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_country'
+  // Exported field_instance: 'user-user-field_user_country'.
   $field_instances['user-user-field_user_country'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -99,7 +99,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_dietary_needs'
+  // Exported field_instance: 'user-user-field_user_dietary_needs'.
   $field_instances['user-user-field_user_dietary_needs'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -142,7 +142,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_first_name'
+  // Exported field_instance: 'user-user-field_user_first_name'.
   $field_instances['user-user-field_user_first_name'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -189,7 +189,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_job_speeding_date'
+  // Exported field_instance: 'user-user-field_user_job_speeding_date'.
   $field_instances['user-user-field_user_job_speeding_date'] = array(
     'bundle' => 'user',
     'default_value' => array(
@@ -238,7 +238,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_job_title'
+  // Exported field_instance: 'user-user-field_user_job_title'.
   $field_instances['user-user-field_user_job_title'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -284,7 +284,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_last_name'
+  // Exported field_instance: 'user-user-field_user_last_name'.
   $field_instances['user-user-field_user_last_name'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -331,7 +331,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_organization'
+  // Exported field_instance: 'user-user-field_user_organization'.
   $field_instances['user-user-field_user_organization'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -378,7 +378,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_participate_days'
+  // Exported field_instance: 'user-user-field_user_participate_days'.
   $field_instances['user-user-field_user_participate_days'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -421,7 +421,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_picture'
+  // Exported field_instance: 'user-user-field_user_picture'.
   $field_instances['user-user-field_user_picture'] = array(
     'bundle' => 'user',
     'deleted' => 0,
@@ -485,7 +485,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_size_t_shirt'
+  // Exported field_instance: 'user-user-field_user_size_t_shirt'.
   $field_instances['user-user-field_user_size_t_shirt'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -528,7 +528,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_social_dorg'
+  // Exported field_instance: 'user-user-field_user_social_dorg'.
   $field_instances['user-user-field_user_social_dorg'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -591,7 +591,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_social_facebook'
+  // Exported field_instance: 'user-user-field_user_social_facebook'.
   $field_instances['user-user-field_user_social_facebook'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -654,7 +654,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_social_linkedin'
+  // Exported field_instance: 'user-user-field_user_social_linkedin'.
   $field_instances['user-user-field_user_social_linkedin'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
@@ -717,7 +717,7 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_social_twitter'
+  // Exported field_instance: 'user-user-field_user_social_twitter'.
   $field_instances['user-user-field_user_social_twitter'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
