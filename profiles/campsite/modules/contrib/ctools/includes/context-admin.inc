@@ -376,11 +376,11 @@ function ctools_context_ajax_item_add($mechanism = NULL, $type = NULL, $cache_ke
     'path' => "ctools/context/ajax/add/$mechanism/$type/$cache_key/$name/%step",
     'show cancel' => TRUE,
     'default form' => 'ctools_edit_context_form_defaults',
-    'auto caching' => TRUE,
+    'auto cache' => TRUE,
     'cache mechanism' => $mechanism,
     'cache key' => $cache_key,
     // This is stating what the cache will be referred to in $form_state
-    'cache storage' => 'object',
+    'cache location' => 'object',
   );
 
   if ($type == 'requiredcontext') {
@@ -561,11 +561,11 @@ function ctools_context_ajax_item_edit($mechanism = NULL, $type = NULL, $cache_k
     'path' => "ctools/context/ajax/configure/$mechanism/$type/$cache_key/$position/%step",
     'show cancel' => TRUE,
     'default form' => 'ctools_edit_context_form_defaults',
-    'auto caching' => TRUE,
+    'auto cache' => TRUE,
     'cache mechanism' => $mechanism,
     'cache key' => $cache_key,
     // This is stating what the cache will be referred to in $form_state
-    'cache storage' => 'object',
+    'cache location' => 'object',
   );
 
   if ($type == 'requiredcontext') {
@@ -736,6 +736,15 @@ function ctools_edit_context_form_defaults($form, &$form_state) {
     '#default_value' => $conf['keyword'],
   );
 
+  if ($type_info['key'] == 'requiredcontexts') {
+    $form['optional'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Context is optional'),
+      '#default_value' => !empty($form_state['conf']['optional']),
+      '#description' => t('This context need not be present for the component to function.'),
+    );
+  }
+
   $form['#submit'][] = 'ctools_edit_context_form_defaults_submit';
 
   return $form;
@@ -751,6 +760,9 @@ function ctools_edit_context_form_defaults_submit(&$form, &$form_state) {
   if ($form_state['type info']['key'] == 'arguments') {
     $form_state['conf']['default'] = $form_state['values']['default'];
     $form_state['conf']['title'] = $form_state['values']['title'];
+  }
+  if ($form_state['type info']['key'] == 'requiredcontexts') {
+    $form_state['conf']['optional'] = $form_state['values']['optional'];
   }
 
   $form_state['conf']['identifier'] = $form_state['values']['identifier'];
