@@ -1,6 +1,9 @@
-name = CampSite 2015
-description = Install profile for CampSite 2015.
+name = CampSite
+description = Install profile for CampSite.
 version = 7.x-1.0-dev
+
+; Mark as exclusive for automatic installation.
+exclusive = true
 
 api = 2
 core = 7.x

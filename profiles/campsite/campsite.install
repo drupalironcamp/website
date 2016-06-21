@@ -45,3 +45,20 @@ function campsite_form_install_configure_form_alter(&$form, $form_state) {
   $form['update_notifications']['update_status_module'][1]['#default_value'] = 0;
   $form['update_notifications']['update_status_module'][2]['#default_value'] = 0;
 }
+
+/**
+ * Implements hook_install_tasks_alter().
+ *
+ * Sets up default settings for a new site using this profile.
+ */
+function campsite_install_tasks_alter(&$tasks, $install_state) {
+
+  // Set the default installation language to EN and skip the step.
+  global $install_state;
+  $tasks['install_select_locale']['display'] = FALSE;
+  $tasks['install_select_locale']['run'] = INSTALL_TASK_SKIP;
+  $install_state['parameters']['locale'] = 'en';
+
+  // Remove install select profile step as this is an exclusive profile.
+  unset($tasks['install_select_profile']);
+}
