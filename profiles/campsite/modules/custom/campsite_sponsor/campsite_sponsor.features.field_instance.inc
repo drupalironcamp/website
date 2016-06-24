@@ -10,7 +10,7 @@
 function campsite_sponsor_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-sponsor-body'
+  // Exported field_instance: 'node-sponsor-body'.
   $field_instances['node-sponsor-body'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -69,7 +69,7 @@ function campsite_sponsor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_category'
+  // Exported field_instance: 'node-sponsor-field_sponsor_category'.
   $field_instances['node-sponsor-field_sponsor_category'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -131,7 +131,7 @@ function campsite_sponsor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_link'
+  // Exported field_instance: 'node-sponsor-field_sponsor_link'.
   $field_instances['node-sponsor-field_sponsor_link'] = array(
     'bundle' => 'sponsor',
     'default_value' => NULL,
@@ -208,7 +208,7 @@ function campsite_sponsor_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sponsor-field_sponsor_logo'
+  // Exported field_instance: 'node-sponsor-field_sponsor_logo'.
   $field_instances['node-sponsor-field_sponsor_logo'] = array(
     'bundle' => 'sponsor',
     'deleted' => 0,

@@ -10,14 +10,13 @@
 function campsite_codesprint_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_codesprint_date'
+  // Exported field_base: 'field_codesprint_date'.
   $field_bases['field_codesprint_date'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_codesprint_date',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -40,14 +39,13 @@ function campsite_codesprint_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_codesprint_level'
+  // Exported field_base: 'field_codesprint_level'.
   $field_bases['field_codesprint_level'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_codesprint_level',
-    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -78,14 +76,13 @@ function campsite_codesprint_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_codesprint_organizers'
+  // Exported field_base: 'field_codesprint_organizers'.
   $field_bases['field_codesprint_organizers'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_codesprint_organizers',
-    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -114,21 +111,13 @@ function campsite_codesprint_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_codesprint_resources'
+  // Exported field_base: 'field_codesprint_resources'.
   $field_bases['field_codesprint_resources'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_codesprint_resources',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -145,14 +134,13 @@ function campsite_codesprint_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_codesprint_room'
+  // Exported field_base: 'field_codesprint_room'.
   $field_bases['field_codesprint_room'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_codesprint_room',
-    'foreign keys' => array(),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',

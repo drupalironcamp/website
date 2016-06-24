@@ -10,14 +10,13 @@
 function campsite_session_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_session_date'
+  // Exported field_base: 'field_session_date'.
   $field_bases['field_session_date'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_date',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',
@@ -40,21 +39,13 @@ function campsite_session_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_session_experience_level'
+  // Exported field_base: 'field_session_experience_level'.
   $field_bases['field_session_experience_level'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_experience_level',
-    'foreign keys' => array(
-      'taxonomy_term_data' => array(
-        'columns' => array(
-          'target_id' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -85,21 +76,13 @@ function campsite_session_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_session_further_resources'
+  // Exported field_base: 'field_session_further_resources'.
   $field_bases['field_session_further_resources'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_further_resources',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
@@ -116,21 +99,13 @@ function campsite_session_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_session_keywords'
+  // Exported field_base: 'field_session_keywords'.
   $field_bases['field_session_keywords'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_keywords',
-    'foreign keys' => array(
-      'taxonomy_term_data' => array(
-        'columns' => array(
-          'target_id' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -161,21 +136,13 @@ function campsite_session_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_session_room'
+  // Exported field_base: 'field_session_room'.
   $field_bases['field_session_room'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_room',
-    'foreign keys' => array(
-      'taxonomy_term_data' => array(
-        'columns' => array(
-          'target_id' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -206,21 +173,13 @@ function campsite_session_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_session_speakers'
+  // Exported field_base: 'field_session_speakers'.
   $field_bases['field_session_speakers'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_speakers',
-    'foreign keys' => array(
-      'users' => array(
-        'columns' => array(
-          'target_id' => 'uid',
-        ),
-        'table' => 'users',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -249,21 +208,13 @@ function campsite_session_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_session_track'
+  // Exported field_base: 'field_session_track'.
   $field_bases['field_session_track'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_track',
-    'foreign keys' => array(
-      'taxonomy_term_data' => array(
-        'columns' => array(
-          'target_id' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -294,21 +245,13 @@ function campsite_session_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_session_type'
+  // Exported field_base: 'field_session_type'.
   $field_bases['field_session_type'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_session_type',
-    'foreign keys' => array(
-      'taxonomy_term_data' => array(
-        'columns' => array(
-          'target_id' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
