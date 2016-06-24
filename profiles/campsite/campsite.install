@@ -62,3 +62,15 @@ function campsite_install_tasks_alter(&$tasks, $install_state) {
   // Remove install select profile step as this is an exclusive profile.
   unset($tasks['install_select_profile']);
 }
+
+/**
+ * Enable Token and Pathauto modules.
+ */
+function campsite_update_7000() {
+  if (!module_exists('token')) {
+    module_enable(array('token'));
+  }
+  if (!module_exists('pathauto')) {
+    module_enable(array('pathauto'));
+  }
+}
