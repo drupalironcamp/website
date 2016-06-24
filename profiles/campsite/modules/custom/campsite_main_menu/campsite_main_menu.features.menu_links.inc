@@ -10,16 +10,14 @@
 function campsite_main_menu_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_accomodation:node/9
+  // Exported menu link: main-menu_accomodation:node/9.
   $menu_links['main-menu_accomodation:node/9'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/9',
     'router_path' => 'node/%',
     'link_title' => 'Accomodation',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_accomodation:node/9',
     ),
     'module' => 'menu',
@@ -31,16 +29,14 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_location:node/7',
   );
-  // Exported menu link: main-menu_bof:node/4
+  // Exported menu link: main-menu_bof:node/4.
   $menu_links['main-menu_bof:node/4'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/4',
     'router_path' => 'node/%',
     'link_title' => 'BoF',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_bof:node/4',
     ),
     'module' => 'menu',
@@ -52,37 +48,14 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:node/2',
   );
-  // Exported menu link: main-menu_budapest:node/7
-  $menu_links['main-menu_budapest:node/7'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/7',
-    'router_path' => 'node/%',
-    'link_title' => 'Budapest',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_budapest:node/7',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 1,
-    'weight' => -50,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_location:node/7',
-  );
-  // Exported menu link: main-menu_going-out:node/11
+  // Exported menu link: main-menu_going-out:node/11.
   $menu_links['main-menu_going-out:node/11'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/11',
     'router_path' => 'node/%',
     'link_title' => 'Going out',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_going-out:node/11',
     ),
     'module' => 'menu',
@@ -94,7 +67,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_location:node/7',
   );
-  // Exported menu link: main-menu_home:<front>
+  // Exported menu link: main-menu_home:<front>.
   $menu_links['main-menu_home:<front>'] = array(
     'menu_name' => 'main-menu',
     'link_path' => '<front>',
@@ -114,16 +87,14 @@ function campsite_main_menu_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_job-speed-dating:node/3
+  // Exported menu link: main-menu_job-speed-dating:node/3.
   $menu_links['main-menu_job-speed-dating:node/3'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/3',
     'router_path' => 'node/%',
     'link_title' => 'Job speed dating',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_job-speed-dating:node/3',
     ),
     'module' => 'menu',
@@ -135,7 +106,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:node/2',
   );
-  // Exported menu link: main-menu_location:node/7
+  // Exported menu link: main-menu_location:node/7.
   $menu_links['main-menu_location:node/7'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/7',
@@ -148,34 +119,32 @@ function campsite_main_menu_menu_default_menu_links() {
       'identifier' => 'main-menu_location:node/7',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
     'weight' => -47,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_program:node/2
+  // Exported menu link: main-menu_program:node/2.
   $menu_links['main-menu_program:node/2'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/2',
     'router_path' => 'node/%',
     'link_title' => 'Program',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_program:node/2',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_sessions:program/sessions
+  // Exported menu link: main-menu_sessions:program/sessions.
   $menu_links['main-menu_sessions:program/sessions'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'program/sessions',
@@ -196,28 +165,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:node/2',
   );
-  // Exported menu link: main-menu_social-activities:node/5
-  $menu_links['main-menu_social-activities:node/5'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/5',
-    'router_path' => 'node/%',
-    'link_title' => 'Social activities',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_social-activities:node/5',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -45,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_program:node/2',
-  );
-  // Exported menu link: main-menu_sprints:program/code-sprints
+  // Exported menu link: main-menu_sprints:program/code-sprints.
   $menu_links['main-menu_sprints:program/code-sprints'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'program/code-sprints',
@@ -238,27 +186,25 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:node/2',
   );
-  // Exported menu link: main-menu_tickets:node/7
+  // Exported menu link: main-menu_tickets:node/7.
   $menu_links['main-menu_tickets:node/7'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/7',
     'router_path' => 'node/%',
     'link_title' => 'Tickets',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_tickets:node/7',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -49,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_timeline:node/2
+  // Exported menu link: main-menu_timeline:node/2.
   $menu_links['main-menu_timeline:node/2'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/2',
@@ -279,16 +225,14 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_program:node/2',
   );
-  // Exported menu link: main-menu_travel:node/10
+  // Exported menu link: main-menu_travel:node/10.
   $menu_links['main-menu_travel:node/10'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/10',
     'router_path' => 'node/%',
     'link_title' => 'Travel',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_travel:node/10',
     ),
     'module' => 'menu',
@@ -300,16 +244,14 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_location:node/7',
   );
-  // Exported menu link: main-menu_useful-tips:node/12
+  // Exported menu link: main-menu_useful-tips:node/12.
   $menu_links['main-menu_useful-tips:node/12'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/12',
     'router_path' => 'node/%',
     'link_title' => 'Useful tips',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_useful-tips:node/12',
     ),
     'module' => 'menu',
@@ -321,16 +263,14 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_location:node/7',
   );
-  // Exported menu link: main-menu_venue:node/8
+  // Exported menu link: main-menu_venue:node/8.
   $menu_links['main-menu_venue:node/8'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/8',
     'router_path' => 'node/%',
     'link_title' => 'Venue',
     'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
+      'attributes' => array(),
       'identifier' => 'main-menu_venue:node/8',
     ),
     'module' => 'menu',
@@ -342,7 +282,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'main-menu_location:node/7',
   );
-  // Exported menu link: menu-secondary-menu_about:node/14
+  // Exported menu link: menu-secondary-menu_about:node/14.
   $menu_links['menu-secondary-menu_about:node/14'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'node/14',
@@ -355,14 +295,14 @@ function campsite_main_menu_menu_default_menu_links() {
       'identifier' => 'menu-secondary-menu_about:node/14',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
   );
-  // Exported menu link: menu-secondary-menu_attendees:community/attendees
+  // Exported menu link: menu-secondary-menu_attendees:community/attendees.
   $menu_links['menu-secondary-menu_attendees:community/attendees'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'community/attendees',
@@ -383,7 +323,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
   );
-  // Exported menu link: menu-secondary-menu_code-of-conduct:node/16
+  // Exported menu link: menu-secondary-menu_code-of-conduct:node/16.
   $menu_links['menu-secondary-menu_code-of-conduct:node/16'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'node/16',
@@ -404,7 +344,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
   );
-  // Exported menu link: menu-secondary-menu_community:community/attendees
+  // Exported menu link: menu-secondary-menu_community:community/attendees.
   $menu_links['menu-secondary-menu_community:community/attendees'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'community/attendees',
@@ -417,14 +357,14 @@ function campsite_main_menu_menu_default_menu_links() {
       'identifier' => 'menu-secondary-menu_community:community/attendees',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
     'weight' => -47,
     'customized' => 1,
   );
-  // Exported menu link: menu-secondary-menu_our-sponsors:sponsors
+  // Exported menu link: menu-secondary-menu_our-sponsors:sponsors.
   $menu_links['menu-secondary-menu_our-sponsors:sponsors'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'sponsors',
@@ -445,7 +385,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'menu-secondary-menu_sponsors:sponsors',
   );
-  // Exported menu link: menu-secondary-menu_scholarship:node/14
+  // Exported menu link: menu-secondary-menu_scholarship:node/14.
   $menu_links['menu-secondary-menu_scholarship:node/14'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'node/14',
@@ -466,28 +406,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
   );
-  // Exported menu link: menu-secondary-menu_sponsor-guide:node/13
-  $menu_links['menu-secondary-menu_sponsor-guide:node/13'] = array(
-    'menu_name' => 'menu-secondary-menu',
-    'link_path' => 'node/13',
-    'router_path' => 'node/%',
-    'link_title' => 'Sponsor guide',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-secondary-menu_sponsor-guide:node/13',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'parent_identifier' => 'menu-secondary-menu_sponsors:sponsors',
-  );
-  // Exported menu link: menu-secondary-menu_sponsors:sponsors
+  // Exported menu link: menu-secondary-menu_sponsors:sponsors.
   $menu_links['menu-secondary-menu_sponsors:sponsors'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'sponsors',
@@ -500,14 +419,14 @@ function campsite_main_menu_menu_default_menu_links() {
       'identifier' => 'menu-secondary-menu_sponsors:sponsors',
     ),
     'module' => 'menu',
-    'hidden' => 0,
+    'hidden' => 1,
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
     'weight' => -46,
     'customized' => 1,
   );
-  // Exported menu link: menu-secondary-menu_spread-the-word:node/15
+  // Exported menu link: menu-secondary-menu_spread-the-word:node/15.
   $menu_links['menu-secondary-menu_spread-the-word:node/15'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'node/15',
@@ -528,7 +447,7 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
   );
-  // Exported menu link: menu-secondary-menu_volunteers:community/volunteers
+  // Exported menu link: menu-secondary-menu_volunteers:community/volunteers.
   $menu_links['menu-secondary-menu_volunteers:community/volunteers'] = array(
     'menu_name' => 'menu-secondary-menu',
     'link_path' => 'community/volunteers',
@@ -549,13 +468,13 @@ function campsite_main_menu_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'menu-secondary-menu_community:community/attendees',
   );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('About');
   t('Accomodation');
   t('Attendees');
   t('BoF');
-  t('Budapest');
   t('Code of conduct');
   t('Community');
   t('Going out');
@@ -566,8 +485,6 @@ function campsite_main_menu_menu_default_menu_links() {
   t('Program');
   t('Scholarship');
   t('Sessions');
-  t('Social activities');
-  t('Sponsor guide');
   t('Sponsors');
   t('Spread the word');
   t('Sprints');
@@ -577,7 +494,6 @@ function campsite_main_menu_menu_default_menu_links() {
   t('Useful tips');
   t('Venue');
   t('Volunteers');
-
 
   return $menu_links;
 }

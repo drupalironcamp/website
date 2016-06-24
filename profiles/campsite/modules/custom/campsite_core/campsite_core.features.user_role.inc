@@ -13,7 +13,7 @@ function campsite_core_user_default_roles() {
   // Exported role: Attendee.
   $roles['Attendee'] = array(
     'name' => 'Attendee',
-    'weight' => 4,
+    'weight' => 2,
   );
 
   // Exported role: Editor.
@@ -25,7 +25,7 @@ function campsite_core_user_default_roles() {
   // Exported role: Manager.
   $roles['Manager'] = array(
     'name' => 'Manager',
-    'weight' => 2,
+    'weight' => 4,
   );
 
   return $roles;
