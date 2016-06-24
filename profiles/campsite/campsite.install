@@ -74,3 +74,12 @@ function campsite_update_7000() {
     module_enable(array('pathauto'));
   }
 }
+
+/**
+ * Disable ShareThis module.
+ */
+function campsite_update_7001() {
+  if (module_exists('sharethis')) {
+    module_disable(array('sharethis'));
+  }
+}
