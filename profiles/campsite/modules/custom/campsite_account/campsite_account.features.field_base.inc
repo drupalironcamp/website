@@ -205,11 +205,10 @@ function campsite_account_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'Monday' => 'Monday',
-        'Tuesday' => 'Tuesday',
-        'Wednesday' => 'Wednesday',
         'Thursday' => 'Thursday',
         'Friday' => 'Friday',
+        'Saturday' => 'Saturday',
+        'Sunday' => 'Sunday',
       ),
       'allowed_values_function' => '',
     ),
