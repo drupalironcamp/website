@@ -287,7 +287,7 @@
            <span class="title">IRON CAMP</span>
            2016
          </a>
-         <div class="footer-message">2015-6 @ Built by the community
+         <div class="footer-message">2016 @ Built by the community
            <div class="footer-links">
             <?php print l(t('Disclaimer.'), 'disclaimer') . l(t('Code of conduct.'), 'node/16'); ?>
           </div>
