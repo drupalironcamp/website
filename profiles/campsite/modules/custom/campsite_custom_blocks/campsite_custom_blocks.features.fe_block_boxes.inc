@@ -46,7 +46,7 @@ function campsite_custom_blocks_default_fe_block_boxes() {
   $fe_block_boxes->machine_name = 'map_venue_location';
   $fe_block_boxes->body = '<div style="height: 445px;" id="map"></div>
 <script>
-var map = L.map(\'map\').setView([47.494539, 19.043300], 14);
+var map = L.map(\'map\').setView([50.074368, 14.416817], 12);
 
 
 L.tileLayer(\'http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}\', {
@@ -58,7 +58,7 @@ var IronIcon = L.divIcon({
     iconAnchor: null,
 iconSize:     [81, 120]
 });
-L.marker([47.494539, 19.043300], {
+L.marker([50.074368, 14.416817], {
     icon: IronIcon
 }).addTo(map);
 
