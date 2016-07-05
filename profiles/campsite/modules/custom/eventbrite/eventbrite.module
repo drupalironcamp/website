@@ -22,7 +22,6 @@ function eventbrite_menu() {
 
 function eventbrite_webhook_process() {
   $webhook = json_decode(file_get_contents('php://input'), TRUE);
-  watchdog('eventbrite', print_r($webhook, TRUE));
   if ($webhook['config']['action'] === 'order.placed') {
     $token = variable_get('eventbrite_oauth_token', '');
     if (empty($token)) {
@@ -31,6 +30,7 @@ function eventbrite_webhook_process() {
     }
     $request_url = $webhook['api_url'] . '?extend=attendees&token=' . $token;
     $order = json_decode(file_get_contents($request_url), TRUE);
+    watchdog('eventbrite', print_r($order, TRUE));
     $attendees = $order['attendees'];
     foreach ($attendees as $attendee) {
       $email = $attendee['profile']['email'];
