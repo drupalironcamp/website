@@ -37,7 +37,12 @@ function eventbrite_webhook_process() {
         $account = drupal_anonymous_user();
         $account->mail = $email;
         $account->name = $email;
+        $account->status = 1;
         $account = user_save($account);
+        // Modify user role, if any is selected
+        if(!empty($rid = variable_get('eventbrite_role', ''))) {
+          user_multiple_role_edit(array($account->uid),'add_role',$rid);
+        }
         // Notify user about new account.
         _user_mail_notify('register_admin_created', $account);
         watchdog('eventbrite', 'User #@id has been created', array('@id' => $account->uid), WATCHDOG_INFO);
