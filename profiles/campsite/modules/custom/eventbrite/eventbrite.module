@@ -20,6 +20,31 @@ function eventbrite_menu() {
 }
 
 function eventbrite_webhook_process() {
-  $request_body = file_get_contents('php://input');
-  watchdog('eventbrite', $request_body);
+  $webhook = json_decode(file_get_contents('php://input'), TRUE);
+  watchdog('eventbrite', print_r($webhook, TRUE));
+  if ($webhook['config']['action'] === 'order.placed') {
+    $token = variable_get('eventbrite_oauth_token', '');
+    if (empty($token)) {
+      watchdog('eventbrite', 'You have to fill your token first.', array(), WATCHDOG_ERROR);
+      return;
+    }
+    $request_url = $webhook['api_url'] . '?extend=attendees&token=' . $token;
+    $order = json_decode(file_get_contents($request_url), TRUE);
+    $attendees = $order['attendees'];
+    foreach ($attendees as $attendee) {
+      $email = $attendee['profile']['email'];
+      if (user_load_by_mail($email) !== FALSE) {
+        $account = drupal_anonymous_user();
+        $account->mail = $email;
+        $account->name = $email;
+        $account = user_save($account);
+        // Notify user about new account.
+        _user_mail_notify('register_admin_created', $account);
+        watchdog('eventbrite', 'User #@id has been created', array('@id' => $account->uid), WATCHDOG_INFO);
+      }
+      else {
+        watchdog('eventbrite', 'User with email @email has been created', array('@email' => $email), WATCHDOG_INFO);
+      }
+    }
+  }
 }
