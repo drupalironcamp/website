@@ -20,5 +20,6 @@ function eventbrite_menu() {
 }
 
 function eventbrite_webhook_process() {
-  watchdog('eventbrite', print_r($_POST, TRUE));
+  $request_body = file_get_contents('php://input');
+  watchdog('eventbrite', $request_body);
 }
