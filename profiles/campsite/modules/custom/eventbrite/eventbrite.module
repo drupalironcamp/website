@@ -8,7 +8,8 @@ function eventbrite_menu() {
     'admin/config/system/eventbrite' => array(
       'title' => 'Eventbrite',
       'description' => 'Setup Eventbrite integration',
-      'page callback' => 'eventbrite_admin_config_form',
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('eventbrite_admin_config_form'),
       'access arguments' => array('administer site configuration'),
       'file' => 'eventbrite.admin.inc',
     ),
