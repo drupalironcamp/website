@@ -28,7 +28,7 @@ function eventbrite_webhook_process() {
       watchdog('eventbrite', 'You have to fill your token first.', array(), WATCHDOG_ERROR);
       return;
     }
-    $request_url = $webhook['api_url'] . '?extend=attendees&token=' . $token;
+    $request_url = $webhook['api_url'] . '?expand=attendees&token=' . $token;
     $order = json_decode(file_get_contents($request_url), TRUE);
     watchdog('eventbrite', print_r($order, TRUE));
     $attendees = $order['attendees'];
