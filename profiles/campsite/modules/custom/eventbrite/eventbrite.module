@@ -30,11 +30,10 @@ function eventbrite_webhook_process() {
     }
     $request_url = $webhook['api_url'] . '?expand=attendees&token=' . $token;
     $order = json_decode(file_get_contents($request_url), TRUE);
-    watchdog('eventbrite', print_r($order, TRUE));
     $attendees = $order['attendees'];
     foreach ($attendees as $attendee) {
       $email = $attendee['profile']['email'];
-      if (user_load_by_mail($email) !== FALSE) {
+      if (user_load_by_mail($email) === FALSE) {
         $account = drupal_anonymous_user();
         $account->mail = $email;
         $account->name = $email;
@@ -44,7 +43,7 @@ function eventbrite_webhook_process() {
         watchdog('eventbrite', 'User #@id has been created', array('@id' => $account->uid), WATCHDOG_INFO);
       }
       else {
-        watchdog('eventbrite', 'User with email @email has been created', array('@email' => $email), WATCHDOG_INFO);
+        watchdog('eventbrite', "User with email @email hasn't been created", array('@email' => $email), WATCHDOG_INFO);
       }
     }
   }
