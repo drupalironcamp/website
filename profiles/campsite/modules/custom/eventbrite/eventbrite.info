@@ -1,0 +1,4 @@
+name = Eventbrite integration
+description = A module that provides webhook integration with Eventbrite API.
+package = Integrations
+core = 7.x
