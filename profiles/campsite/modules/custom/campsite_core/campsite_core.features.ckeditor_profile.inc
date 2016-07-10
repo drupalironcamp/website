@@ -76,7 +76,7 @@ function campsite_core_ckeditor_profile_defaults() {
     [\'NumberedList\',\'BulletedList\',\'-\',\'Outdent\',\'Indent\'],
     [\'Blockquote\',\'CreateDiv\'],
     [\'JustifyLeft\',\'JustifyCenter\',\'JustifyRight\',\'JustifyBlock\',\'-\'],
-    [\'Link\',\'Unlink\',\'Anchor\',\'Format\']
+    [\'Link\',\'Unlink\',\'Anchor\',\'Format\',\'Image\']
 ]',
         'expand' => 't',
         'default' => 't',
@@ -107,7 +107,7 @@ function campsite_core_ckeditor_profile_defaults() {
         'css_path' => '',
         'css_style' => 'theme',
         'styles_path' => '',
-        'filebrowser' => 'none',
+        'filebrowser' => 'imce',
         'filebrowser_image' => '',
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',
