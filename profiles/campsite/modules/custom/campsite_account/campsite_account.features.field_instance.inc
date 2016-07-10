@@ -56,92 +56,6 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_country'.
-  $field_instances['user-user-field_user_country'] = array(
-    'bundle' => 'user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'attendee' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'countries',
-        'settings' => array(),
-        'type' => 'country_default',
-        'weight' => 6,
-      ),
-      'list' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 7,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_user_country',
-    'label' => 'Country',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => 1,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'countries',
-      'settings' => array(),
-      'type' => 'countries_continent',
-      'weight' => 17,
-    ),
-  );
-
-  // Exported field_instance: 'user-user-field_user_dietary_needs'.
-  $field_instances['user-user-field_user_dietary_needs'] = array(
-    'bundle' => 'user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'attendee' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 11,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 10,
-      ),
-      'list' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 11,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_user_dietary_needs',
-    'label' => 'Dietary needs',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => 1,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 21,
-    ),
-  );
-
   // Exported field_instance: 'user-user-field_user_first_name'.
   $field_instances['user-user-field_user_first_name'] = array(
     'bundle' => 'user',
@@ -186,55 +100,6 @@ function campsite_account_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 11,
-    ),
-  );
-
-  // Exported field_instance: 'user-user-field_user_job_speeding_date'.
-  $field_instances['user-user-field_user_job_speeding_date'] = array(
-    'bundle' => 'user',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'attendee' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 8,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 7,
-      ),
-      'list' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 8,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_user_job_speeding_date',
-    'label' => 'I\'m interested in participating at the job speed dating',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => 1,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 18,
     ),
   );
 
@@ -378,49 +243,6 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_participate_days'.
-  $field_instances['user-user-field_user_participate_days'] = array(
-    'bundle' => 'user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'attendee' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 10,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 9,
-      ),
-      'list' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 10,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_user_participate_days',
-    'label' => 'I\'m planning to attend the following days',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => 1,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 20,
-    ),
-  );
-
   // Exported field_instance: 'user-user-field_user_picture'.
   $field_instances['user-user-field_user_picture'] = array(
     'bundle' => 'user',
@@ -485,55 +307,12 @@ function campsite_account_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_size_t_shirt'.
-  $field_instances['user-user-field_user_size_t_shirt'] = array(
-    'bundle' => 'user',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'attendee' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 9,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 8,
-      ),
-      'list' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 9,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_user_size_t_shirt',
-    'label' => 'My T-shirt size',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => 1,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 19,
-    ),
-  );
-
   // Exported field_instance: 'user-user-field_user_social_dorg'.
   $field_instances['user-user-field_user_social_dorg'] = array(
     'bundle' => 'user',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://drupal.org/user/103042 just copy 103042. Thanks!',
+    'description' => '',
     'display' => array(
       'attendee' => array(
         'label' => 'above',
@@ -566,7 +345,7 @@ function campsite_account_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -596,7 +375,7 @@ function campsite_account_field_default_field_instances() {
     'bundle' => 'user',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://facebook.com/bruce.wayne just copy bruce.wayne. Thanks!',
+    'description' => '',
     'display' => array(
       'attendee' => array(
         'label' => 'above',
@@ -629,7 +408,7 @@ function campsite_account_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -659,7 +438,7 @@ function campsite_account_field_default_field_instances() {
     'bundle' => 'user',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please check your LinkedIn profile’s URL, and copy the end of it: e. g. if your link says: http://www.linkedin.com/in/drupalmarvin just copy in/drupalmarvin.',
+    'description' => '',
     'display' => array(
       'attendee' => array(
         'label' => 'above',
@@ -692,7 +471,7 @@ function campsite_account_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -722,7 +501,7 @@ function campsite_account_field_default_field_instances() {
     'bundle' => 'user',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://twitter.com/imBatman just copy imBatman. Thanks!',
+    'description' => '',
     'display' => array(
       'attendee' => array(
         'label' => 'above',
@@ -755,7 +534,7 @@ function campsite_account_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -783,23 +562,14 @@ function campsite_account_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('About me');
-  t('Country');
-  t('Dietary needs');
   t('Drupal.org');
   t('Facebook');
   t('First name');
-  t('I\'m interested in participating at the job speed dating');
-  t('I\'m planning to attend the following days');
   t('Job title');
   t('Last name');
   t('Linkedin');
-  t('My T-shirt size');
   t('Organization');
   t('Picture');
-  t('Please check your LinkedIn profile’s URL, and copy the end of it: e. g. if your link says: http://www.linkedin.com/in/drupalmarvin just copy in/drupalmarvin.');
-  t('Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://drupal.org/user/103042 just copy 103042. Thanks!');
-  t('Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://facebook.com/bruce.wayne just copy bruce.wayne. Thanks!');
-  t('Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://twitter.com/imBatman just copy imBatman. Thanks!');
   t('Twitter');
 
   return $field_instances;
