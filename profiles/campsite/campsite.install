@@ -83,3 +83,12 @@ function campsite_update_7001() {
     module_disable(array('sharethis'));
   }
 }
+
+/**
+ * Enable IMCE module.
+ */
+function campsite_update_7002() {
+  if (module_exists('imce')) {
+    module_disable(array('imce'));
+  }
+}
