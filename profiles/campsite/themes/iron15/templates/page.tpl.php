@@ -299,7 +299,7 @@
     </div>
     <script>
         var options = {
-            "url": "<?php print base_path() . path_to_theme() ?>/css/twitter.css"
+            "url": "<?php print base_path() . path_to_theme() ?>/css/twitter.css?201607102140"
         };
         CustomizeTwitterWidget(options);
     </script>
