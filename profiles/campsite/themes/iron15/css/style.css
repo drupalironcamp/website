@@ -6976,9 +6976,6 @@ fieldset[disabled] .pane-signup input.button.active {
     padding-top: 70px;
   }
 }
-#page-header .logo {
-  z-index: 9999;
-}
 .logo-wrap {
   width: 73px;
   height: 73px;
