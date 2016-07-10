@@ -56,6 +56,7 @@ function campsite_custom_blocks_default_fe_block_boxes() {
           scrollwheel: false,
           disableDoubleClickZoom: true,
           zoomControl: false,
+          disableDefaultUI: true,
           styles: [
              {
               featureType: \'poi\',
