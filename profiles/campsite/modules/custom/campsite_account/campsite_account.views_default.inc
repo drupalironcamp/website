@@ -60,6 +60,31 @@ function campsite_account_views_default_views() {
   /* Display: Attendee list */
   $handler = $view->new_display('panel_pane', 'Attendee list', 'attendee_list');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: User: Active */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'users';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: User: The user ID */
+  $handler->display->display_options['filters']['uid_raw']['id'] = 'uid_raw';
+  $handler->display->display_options['filters']['uid_raw']['table'] = 'users';
+  $handler->display->display_options['filters']['uid_raw']['field'] = 'uid_raw';
+  $handler->display->display_options['filters']['uid_raw']['operator'] = '!=';
+  $handler->display->display_options['filters']['uid_raw']['value']['value'] = '1';
+  $handler->display->display_options['filters']['uid_raw']['expose']['operator_id'] = 'uid_raw_op';
+  $handler->display->display_options['filters']['uid_raw']['expose']['label'] = 'The user ID';
+  $handler->display->display_options['filters']['uid_raw']['expose']['operator'] = 'uid_raw_op';
+  $handler->display->display_options['filters']['uid_raw']['expose']['identifier'] = 'uid_raw';
+  /* Filter criterion: User: The user ID */
+  $handler->display->display_options['filters']['uid_raw_1']['id'] = 'uid_raw_1';
+  $handler->display->display_options['filters']['uid_raw_1']['table'] = 'users';
+  $handler->display->display_options['filters']['uid_raw_1']['field'] = 'uid_raw';
+  $handler->display->display_options['filters']['uid_raw_1']['operator'] = '!=';
+  $handler->display->display_options['filters']['uid_raw_1']['value']['value'] = '298';
 
   /* Display: Individual sponsors */
   $handler = $view->new_display('panel_pane', 'Individual sponsors', 'individual_sponsor');
