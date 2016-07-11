@@ -7079,6 +7079,9 @@ fieldset[disabled] .pane-signup input.button.active {
 .node-type-page .region-content > .block-sharethis .sharethis-wrapper {
   margin: 35px 0 20px;
 }
+.field-name-body img {
+  width: 100%;
+}
 .sharethis-wrapper {
   margin: 10px 0;
 }
