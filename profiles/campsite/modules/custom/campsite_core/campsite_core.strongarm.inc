@@ -13,6 +13,20 @@ function campsite_core_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'configurable_timezones';
+  $strongarm->value = 0;
+  $export['configurable_timezones'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'date_first_day';
+  $strongarm->value = '1';
+  $export['date_first_day'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'imce_profiles';
   $strongarm->value = array(
     1 => array(
@@ -115,6 +129,13 @@ function campsite_core_strongarm() {
   $strongarm->name = 'jquery_update_jquery_version';
   $strongarm->value = '1.8';
   $export['jquery_update_jquery_version'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_default_country';
+  $strongarm->value = 'CZ';
+  $export['site_default_country'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
