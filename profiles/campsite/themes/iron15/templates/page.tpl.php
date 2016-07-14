@@ -95,7 +95,7 @@
   <?php if (!user_is_logged_in()) : ?>
     <nav class="pmenu pmenu-right" id="pmenu-s2">
       <div class="svg-drupal"></div>
-      <p class="text-center"><?php print t("DRUPAL LOGIN") ?></p class="text-center">
+      <p class="text-center"><?php print t("LOGIN") ?></p class="text-center">
       <?php  $elements = drupal_get_form("user_login");
         $form = drupal_render($elements);
         print $form;
@@ -106,12 +106,12 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body clearfix">
-            <h3 class="pull-left">Drupal</h3><h3 class="pull-right">Login</h3>
-            <p>You need to <?php print l(t('buy a ticket'), 'buy-a-ticket')?> to be able to log in.</p>
-
+            <h3 class="text-center">Login</h3>
             <?php  $elements = drupal_get_form("user_login");
               $form = drupal_render($elements);
-              print $form.l(t('Request a new password'), 'user/password', array('attributes' => array('class' => array('btn-link'))));
+              $registration_link = l(t('Register'), 'user/register', array('attributes' => array('class' => array('btn-reg-link'))));
+              $pass_reset_link = l(t('Request a new password'), 'user/password', array('attributes' => array('class' => array('btn-reset-link'))));
+              print $form.$registration_link.$pass_reset_link;
             ?>
 
           </div>
