@@ -5523,12 +5523,10 @@ button.close {
 }
 .footer .svg-big-triangle01 {
   right: 210px;
-  top: 300px;
 }
 @media (min-width: 992px) {
   .footer .svg-big-triangle01 {
     right: 380px;
-    top: 272px;
   }
 }
 .footer .svg-big-triangle02 {
@@ -7203,6 +7201,7 @@ fieldset[disabled] .pane-signup input.button.active {
 .footer {
   position: relative;
   background: #d8d8d8;
+  min-height: 320px;
 }
 @media (min-width: 1260px) {
   .footer {
@@ -7231,17 +7230,17 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .footer .container {
   position: relative;
-  height: 604px;
   text-align: center;
 }
 @media (min-width: 768px) {
   .footer .container {
-    height: 380px;
+    min-height: 320px;
     text-align: right;
   }
 }
 .footer .footer-message {
   width: 100%;
+  padding: 0 15px;
   position: absolute;
   left: 0;
   bottom: 15px;
@@ -7254,20 +7253,18 @@ fieldset[disabled] .pane-signup input.button.active {
   margin-left: 4px;
 }
 @media (min-width: 768px) {
-  .footer .footer-message {
-    bottom: 50px;
-  }
   .footer .footer-message .footer-links {
     display: inline;
   }
 }
 .footer .footer-logo {
+  display: inline-block;
   width: 125px;
   padding-top: 75px;
+  position: absolute;
   background-size: 60px;
   background-position: top center;
-  position: absolute;
-  bottom: 90px;
+  bottom: 35px;
   right: 35px;
   font-size: 16px;
   font-family: 'novecento_sans_widenormal';
