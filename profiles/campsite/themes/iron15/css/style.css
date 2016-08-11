@@ -1714,6 +1714,39 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
+table#top-packages {
+  width: 100%;
+}
+table#top-packages td {
+  border-left: 1px solid #000000;
+  padding: 5px 12px;
+  text-align: center;
+}
+table#top-packages td:first-child {
+  border-left: none;
+}
+table#top-packages tr:nth-child(2n+2) {
+  background: #ffe5cf;
+}
+table#top-packages tr:first-child td {
+  background: #cb085e;
+  color: #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+table#top-packages tr:first-child td:first-child {
+  background: transparent;
+}
+table#top-packages tr:nth-child(2),
+table#top-packages tr:nth-child(3) {
+  background: #ff841c;
+  border-top: 2px solid #FFFFFF;
+}
+table#top-packages tr:nth-child(2) td,
+table#top-packages tr:nth-child(3) td {
+  border-left: 1px solid #FFFFFF;
+}
 fieldset {
   padding: 0;
   margin: 0;

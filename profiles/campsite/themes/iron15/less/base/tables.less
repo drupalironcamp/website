@@ -232,3 +232,43 @@ table {
     }
   }
 }
+
+table#top-packages {
+  width: 100%;
+
+  td {
+    border-left: 1px solid #000000;
+    padding: 5px 12px;
+    text-align: center;
+    &:first-child {
+      border-left: none;
+    }
+  }
+
+  tr:nth-child(2n+2) {
+    background: lighten(@brand-danger, 35%);
+  }
+
+  tr:first-child {
+    td {
+      background: @brand-primary;
+      color: #FFFFFF;
+      border-left: 1px solid #FFFFFF;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &:first-child {
+        background: transparent;
+      }
+    }
+  }
+  tr:nth-child(2),
+  tr:nth-child(3) {
+    background: @brand-danger;
+    border-top: 2px solid #FFFFFF;
+
+    td {
+      border-left: 1px solid #FFFFFF;
+    }
+  }
+}
