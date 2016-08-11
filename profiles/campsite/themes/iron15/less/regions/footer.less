@@ -2,6 +2,7 @@
 .footer{
     position: relative;
     background: @gray;
+    min-height: 320px;
 
     @media (min-width: 1260px){
       background: -moz-linear-gradient(-90deg,  #000000 0%, #000000 40%, @gray 40%, @gray 40%, @gray 100%);
@@ -26,16 +27,17 @@
 
     .container{
         position: relative;
-        height: 604px;
+//        height: 604px;
         text-align: center;
         @media (min-width: @screen-sm){
-          height: 380px;
+          min-height: 320px;
           text-align: right;
         }
     }
 
     .footer-message{
       width: 100%;
+      padding: 0 @grid-gutter-width/2;
       position: absolute;
       left: 0;
       bottom: 15px;
@@ -47,7 +49,7 @@
           }
       }
       @media (min-width: @screen-sm){
-        bottom: 50px;
+//        bottom: 50px;
         .footer-links{
           display: inline;
         }
@@ -55,12 +57,13 @@
     }
 
     .footer-logo{
+      display: inline-block;
       width: 125px;
       padding-top: 75px;
+      position: absolute;
       background-size: 60px;
       background-position: top center;
-      position: absolute;
-      bottom: 90px;
+      bottom: 35px;
       right: 35px;
       font-size: 16px;
       font-family: @nsw-normal;
