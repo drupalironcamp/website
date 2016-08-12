@@ -30,6 +30,10 @@ function eventbrite_webhook_process() {
     }
     $request_url = $webhook['api_url'] . '?expand=attendees&token=' . $token;
     $order = json_decode(file_get_contents($request_url), TRUE);
+    watchdog('eventbrite', 'eventbrite_webhook_process: !order', array(
+      '!order' => '<pre>' . print_r($order, TRUE) . '</pre>',
+    ), WATCHDOG_DEBUG);
+    return FALSE;
     $attendees = $order['attendees'];
     foreach ($attendees as $attendee) {
       $email = $attendee['profile']['email'];
