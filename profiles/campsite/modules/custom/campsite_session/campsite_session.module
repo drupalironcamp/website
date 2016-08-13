@@ -5,3 +5,18 @@
  */
 
 include_once 'campsite_session.features.inc';
+
+/**
+ * Implements hook_form_alter().
+ */
+function campsite_session_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id === 'session_node_form') {
+    global $user;
+    $roles = $user->roles;
+    $form['field_session_speakers'][LANGUAGE_NONE]['add_more']['#value'] = t('Add another speaker');
+    if(!in_array('Editor', $roles) && !in_array('Manager', $roles)) {
+      unset($form['field_session_room']);
+      unset($form['field_session_date']);
+    }
+  }
+}

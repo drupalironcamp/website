@@ -30,6 +30,8 @@ dependencies[] = context
 dependencies[] = menu_block
 dependencies[] = token
 dependencies[] = pathauto
+dependencies[] = imce
+dependencies[] = google_analytics
 
 ; Custom.
 dependencies[] = campsite_codesprint

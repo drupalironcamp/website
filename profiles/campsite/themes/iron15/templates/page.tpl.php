@@ -83,9 +83,24 @@
         <?php print render($secondary_nav); ?>
       <?php endif; ?>
       <ul class="social-menu list-inline">
-        <li><?php print l(t('Facebook'), 'https://www.facebook.com/drupalironcamp/', array('attributes' => array('class' => array('svg-facebook-white'),'target' => "_blank"))); ?></li>
-        <li><?php print l(t('Twitter'), 'https://twitter.com/drupalironcamp', array('attributes' => array('class' => array('svg-twitter-white'),'target' => "_blank"))); ?></li>
-        <li><?php print l(t('info@drupalironcamp.com'), 'mailto:info@drupalironcamp.com', array('attributes' => array('class' => array('svg-mail-white'),'target' => "_blank"))); ?></li>
+        <li><?php print l(t('Facebook'), 'https://www.facebook.com/drupalironcamp/', array(
+            'attributes' => array(
+              'class' => array('svg-facebook-white'),
+              'target' => "_blank"
+            )
+          )); ?></li>
+        <li><?php print l(t('Twitter'), 'https://twitter.com/drupalironcamp', array(
+            'attributes' => array(
+              'class' => array('svg-twitter-white'),
+              'target' => "_blank"
+            )
+          )); ?></li>
+        <li><?php print l(t('info@drupalironcamp.com'), 'mailto:info@drupalironcamp.com', array(
+            'attributes' => array(
+              'class' => array('svg-mail-white'),
+              'target' => "_blank"
+            )
+          )); ?></li>
       </ul>
     </nav>
   <?php endif; ?>
@@ -95,23 +110,24 @@
   <?php if (!user_is_logged_in()) : ?>
     <nav class="pmenu pmenu-right" id="pmenu-s2">
       <div class="svg-drupal"></div>
-      <p class="text-center"><?php print t("DRUPAL LOGIN") ?></p class="text-center">
-      <?php  $elements = drupal_get_form("user_login");
-        $form = drupal_render($elements);
-        print $form;
+      <p class="text-center"><?php print t("LOGIN") ?></p class="text-center">
+      <?php $elements = drupal_get_form("user_login");
+      $form = drupal_render($elements);
+      print $form;
       ?>
     </nav>
 
-    <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1"
+         role="dialog" aria-labelledby="loginModal" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body clearfix">
-            <h3 class="pull-left">Drupal</h3><h3 class="pull-right">Login</h3>
-            <p>You need to <?php print l(t('buy a ticket'), 'buy-a-ticket')?> to be able to log in.</p>
-
-            <?php  $elements = drupal_get_form("user_login");
-              $form = drupal_render($elements);
-              print $form.l(t('Request a new password'), 'user/password', array('attributes' => array('class' => array('btn-link'))));
+            <h3 class="text-center">Login</h3>
+            <?php $elements = drupal_get_form("user_login");
+            $form = drupal_render($elements);
+            $registration_link = l(t('Register'), 'user/register', array('attributes' => array('class' => array('btn-reg-link'))));
+            $pass_reset_link = l(t('Request a new password'), 'user/password', array('attributes' => array('class' => array('btn-reset-link'))));
+            print $form . $registration_link . $pass_reset_link;
             ?>
 
           </div>
@@ -156,103 +172,147 @@
         <?php global $user; // load user avatar
         $user = user_load($user->uid);
         $link = drupal_get_path_alias('user/' . $user->uid);
-        if($user->field_user_picture){
+        if ($user->field_user_picture) {
           print l(theme_image_style(
-              array(
-                'style_name' => 'thumbnail',
-                'path' => $user->field_user_picture['und'][0]['uri'],
-                'attributes' => array('class' => 'avatar'),
-                "height" => NULL,
-                "width" => NULL
-              )),
-            $link, array('html'=>TRUE));
-                   }else{
-          print l('<div class="svg-drupal"></div>', $link, array('class' => 'svg-drupal', 'html'=>TRUE));
-              }
-          ?>
+            array(
+              'style_name' => 'thumbnail',
+              'path' => $user->field_user_picture['und'][0]['uri'],
+              'attributes' => array('class' => 'avatar'),
+              "height" => NULL,
+              "width" => NULL
+            )),
+            $link, array('html' => TRUE));
+        }
+        else {
+          print l('<div class="svg-drupal"></div>', $link, array(
+            'class' => 'svg-drupal',
+            'html' => TRUE
+          ));
+        }
+        ?>
       </div>
       <!-- User picture -->
-      <?php else : ?>
+    <?php else : ?>
       <!-- Button trigger login modal -->
-      <button type="button" class="login-modal-button svg-login corner-button" data-toggle="modal" data-target="#loginModal">
+      <button type="button" class="login-modal-button svg-login corner-button"
+              data-toggle="modal" data-target="#loginModal">
         Login Modal
       </button>
-      <button id="showRightPush" type="button" class="login-pmenu svg-login corner-button">
+      <button id="showRightPush" type="button"
+              class="login-pmenu svg-login corner-button">
         Login Menu
       </button>
     <?php endif; ?>
   </header>
 
   <header role="banner" id="page-header" class="site-header">
-      <div class="container">
+    <div class="container">
 
-        <div class="logo-wrap logo-border"></div>
+      <div class="logo-wrap logo-border"></div>
 
-        <div class="logo-wrap logo">
-            <a href="<?php print $front_page; ?>" class="svg-iron-logo"></a>
-        </div>
-
-        <div class="graphics">
-          <div class="svg-lines" data-grunticon-embed></div>
-          <div class="svg-big-triangle01" data-stellar-ratio="0.7"></div>
-          <div class="svg-big-triangle02" data-stellar-ratio="0.7"></div>
-          <div class="svg-big-triangle03" data-stellar-ratio="1.1"></div>
-          <div class="svg-big-triangle04" data-stellar-ratio="1.1"></div>
-        </div>
-
-
-        <div class="banner-img">
-            <img src="<?php print base_path() . path_to_theme() ?>/images/nga-2016.png"/>
-        </div>
-
-        <?php if (!empty($site_name)): ?>
-          <div class="lead">
-            <?php print l("<span class='site-name'>".$site_name."</span>", "<front>", array('html'=>TRUE)); ?>
-
-            <div class="divider"></div>
-              <div class="camp-location"><?php print t('Prague, Czech Republic');?></div>
-               <div class="btn btn-sm btn-warning"><?php print t('November 24-27, 2016');?></div>
-          </div>
-        <?php endif; ?>
-
-        <?php print render($page['header']); ?>
-
+      <div class="logo-wrap logo">
+        <a href="<?php print $front_page; ?>" class="svg-iron-logo"></a>
       </div>
 
-      <ul class="social-menu list-unstyled">
-        <li><?php print l(t('Facebook'), 'https://www.facebook.com/drupalironcamp/', array('attributes' => array('class' => array('svg-facebook'),'target' => "_blank"))); ?></li>
-        <li><?php print l(t('Twitter'), 'https://twitter.com/drupalironcamp', array('attributes' => array('class' => array('svg-twitter'),'target' => "_blank"))); ?></li>
-        <li><?php print l(t('info@drupalironcamp.com'), 'mailto:info@drupalironcamp.com', array('attributes' => array('class' => array('svg-mail'),'target' => "_blank"))); ?></li>
-      </ul>
+      <div class="graphics">
+        <div class="svg-lines" data-grunticon-embed></div>
+        <div class="svg-big-triangle01" data-stellar-ratio="0.7"></div>
+        <div class="svg-big-triangle02" data-stellar-ratio="0.7"></div>
+        <div class="svg-big-triangle03" data-stellar-ratio="1.1"></div>
+        <div class="svg-big-triangle04" data-stellar-ratio="1.1"></div>
+      </div>
 
-      <?php if($is_front) :?>
-        <?php print $messages; ?>
-        <div class="lead-buttons">
 
-          <?php
-            print l(t('<span>Buy your</span>Ticket'), 'buy-a-ticket', array('html' => TRUE, 'attributes' => array('class' => array('btn', 'btn-danger', 'btn-lg')))).
-               l(t('<span>Become our</span>Sponsor'), 'become-a-sponsor', array('html' => TRUE, 'attributes' => array('class' => array('btn', 'btn-primary', 'btn-lg'))));
-          ?>
+      <div class="banner-img">
+        <img
+          src="<?php print base_path() . path_to_theme() ?>/images/nga-2016.png"/>
+      </div>
 
+      <?php if (!empty($site_name)): ?>
+        <div class="lead">
+          <?php print l("<span class='site-name'>" . $site_name . "</span>", "<front>", array('html' => TRUE)); ?>
+
+          <div class="divider"></div>
+          <div
+            class="camp-location"><?php print t('Prague, Czech Republic'); ?></div>
+          <div
+            class="btn btn-sm btn-warning"><?php print t('November 24-27, 2016'); ?></div>
         </div>
       <?php endif; ?>
 
+      <?php print render($page['header']); ?>
+
+    </div>
+
+    <ul class="social-menu list-unstyled">
+      <li><?php print l(t('Facebook'), 'https://www.facebook.com/drupalironcamp/', array(
+          'attributes' => array(
+            'class' => array('svg-facebook'),
+            'target' => "_blank"
+          )
+        )); ?></li>
+      <li><?php print l(t('Twitter'), 'https://twitter.com/drupalironcamp', array(
+          'attributes' => array(
+            'class' => array('svg-twitter'),
+            'target' => "_blank"
+          )
+        )); ?></li>
+      <li><?php print l(t('info@drupalironcamp.com'), 'mailto:info@drupalironcamp.com', array(
+          'attributes' => array(
+            'class' => array('svg-mail'),
+            'target' => "_blank"
+          )
+        )); ?></li>
+    </ul>
+
+    <?php if ($is_front) : ?>
+      <?php print $messages; ?>
+      <div class="lead-buttons">
+
+        <?php
+        print l(t('<span>Buy your</span>Ticket'), 'buy-a-ticket', array(
+            'html' => TRUE,
+            'attributes' => array(
+              'class' => array(
+                'btn',
+                'btn-danger',
+                'btn-lg'
+              )
+            )
+          )) .
+          $propose_session_link .
+          l(t('<span>Become our</span>Sponsor'), 'become-a-sponsor', array(
+            'html' => TRUE,
+            'attributes' => array(
+              'class' => array(
+                'btn',
+                'btn-primary',
+                'btn-lg'
+              )
+            )
+          ));
+        ?>
+
+      </div>
+    <?php endif; ?>
+
   </header> <!-- /#page-header -->
 
-  <div class="main-container <?php if(!$is_front) : print ('container'); endif; ?>">
+  <div
+    class="main-container <?php if (!$is_front) : print ('container'); endif; ?>">
 
     <div class="row">
 
-      <section<?php if(!$is_front) : print $content_column_class; endif; ?>>
-        <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+      <section<?php if (!$is_front) : print $content_column_class; endif; ?>>
+        <?php if (!empty($breadcrumb)): print $breadcrumb; endif; ?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
         <?php if (!empty($title)): ?>
           <h1 class="page-header"><?php print $title; ?></h1>
         <?php endif; ?>
         <?php print render($title_suffix); ?>
-        <?php if(!$is_front): ?>
-        <?php print $messages; ?>
+        <?php if (!$is_front): ?>
+          <?php print $messages; ?>
         <?php endif; ?>
         <?php if (!empty($tabs)): ?>
           <?php print render($tabs); ?>
@@ -281,14 +341,14 @@
   <footer class="footer">
     <div class="svg-footer-background">
       <div class="container">
-         <?php print render($page['footer']); ?>
+        <?php print render($page['footer']); ?>
 
-         <a href="<?php print $front_page; ?>" class="footer-logo svg-iron-logo">
-           <span class="title">IRON CAMP</span>
-           2016
-         </a>
-         <div class="footer-message">2016 @ Built by the community
-           <div class="footer-links">
+        <a href="<?php print $front_page; ?>" class="footer-logo svg-iron-logo">
+          <span class="title">IRON CAMP</span>
+          2016
+        </a>
+        <div class="footer-message">2016 @ Built by the community
+          <div class="footer-links">
             <?php print l(t('Disclaimer.'), 'disclaimer') . l(t('Code of conduct.'), 'node/16'); ?>
           </div>
         </div>
@@ -298,10 +358,10 @@
       <div class="svg-big-triangle02"></div>
     </div>
     <script>
-        var options = {
-            "url": "<?php print base_path() . path_to_theme() ?>/css/twitter.css"
-        };
-        CustomizeTwitterWidget(options);
+      var options = {
+        "url": "<?php print base_path() . path_to_theme() ?>/css/twitter.css?201607102140"
+      };
+      CustomizeTwitterWidget(options);
     </script>
   </footer>
 </div>

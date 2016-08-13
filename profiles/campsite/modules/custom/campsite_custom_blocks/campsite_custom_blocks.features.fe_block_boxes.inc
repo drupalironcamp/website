@@ -44,29 +44,61 @@ function campsite_custom_blocks_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Map - Venue Location';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'map_venue_location';
-  $fe_block_boxes->body = '<div style="height: 445px;" id="map"></div>
-<script>
-var map = L.map(\'map\').setView([50.074368, 14.416817], 12);
+  $fe_block_boxes->body = '<div  style="height: 445px;" id="map"></div>
+    <script>
+      var map;
+      function initialize() {
+        map = new google.maps.Map(document.getElementById(\'map\'), {
+          zoom: 16,
+          center: new google.maps.LatLng(50.074368, 14.416817),
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          draggable: false,
+          scrollwheel: false,
+          disableDoubleClickZoom: true,
+          zoomControl: false,
+          disableDefaultUI: true,
+          styles: [
+             {
+              featureType: \'poi\',
+              elementType: \'geometry\',
+              stylers: [
+                { visibility: \'off\' }
+              ]
+            }
+          ]
+        });
 
+        var iconBase = \'/profiles/campsite/themes/iron15/images/\';
+        var icons = {
+          venue: {
+            icon: iconBase + \'ironcamp-marker.png\'
+          }
+        };
 
-L.tileLayer(\'http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}\', {
-maxZoom: 20,
-}).addTo(map);
+        function addMarker(feature) {
+          var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: icons[feature.type].icon,
+            map: map
+          });
+        }
 
-var IronIcon = L.divIcon({
-    className: \'svg-pin with-logo\',
-    iconAnchor: null,
-iconSize:     [81, 120]
-});
-L.marker([50.074368, 14.416817], {
-    icon: IronIcon
-}).addTo(map);
+        var features = [
+          {
+            position: new google.maps.LatLng(50.074368, 14.416817),
+            type: \'venue\',
+          }
+        ];
 
-map.touchZoom.disable();
-map.doubleClickZoom.disable();
-map.scrollWheelZoom.disable();
+        for (var i = 0, feature; feature = features[i]; i++) {
+          addMarker(feature);
+        }
+      }
 
-</script>';
+    </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIgVeZXNXQZjrRWBsobgrK7l3SsqHktg&callback=initialize">
+    </script>';
 
   $export['map_venue_location'] = $fe_block_boxes;
 

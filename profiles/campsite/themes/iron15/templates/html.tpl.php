@@ -59,9 +59,9 @@
   <![endif]-->
   <?php print $scripts; ?>
   <script>
-      grunticon(["<?php print base_path() . drupal_get_path('theme','iron15') ?>/svg/icons.data.svg.css",
-                 "<?php print base_path() . drupal_get_path('theme','iron15') ?>/svg/icons.data.png.css",
-                 "<?php print base_path() . drupal_get_path('theme','iron15') ?>/svg/icons.fallback.css"], grunticon.svgLoadedCallback );
+      grunticon(["<?php print base_path() . drupal_get_path('theme','iron15') ?>/svg/icons.data.svg.css?"+Date.now(),
+                 "<?php print base_path() . drupal_get_path('theme','iron15') ?>/svg/icons.data.png.css?"+Date.now(),
+                 "<?php print base_path() . drupal_get_path('theme','iron15') ?>/svg/icons.fallback.css?"+Date.now()], grunticon.svgLoadedCallback );
   </script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 </head>

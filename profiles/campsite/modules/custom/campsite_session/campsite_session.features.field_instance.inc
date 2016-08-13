@@ -43,10 +43,10 @@ function campsite_session_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'body',
     'label' => 'Abstract',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'display_summary' => 0,
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -161,7 +161,7 @@ function campsite_session_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_session_experience_level',
     'label' => 'Experience level',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'behaviors' => array(
         'taxonomy-index' => array(
@@ -416,7 +416,7 @@ function campsite_session_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_session_track',
     'label' => 'Track',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'behaviors' => array(
         'taxonomy-index' => array(
@@ -466,7 +466,7 @@ function campsite_session_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_session_type',
     'label' => 'Type',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'behaviors' => array(
         'taxonomy-index' => array(

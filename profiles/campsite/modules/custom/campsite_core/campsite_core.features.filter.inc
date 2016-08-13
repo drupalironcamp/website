@@ -92,7 +92,7 @@ function campsite_core_filter_default_formats() {
         'weight' => -49,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <sup> <sub> <acronym> <abbr> <ul> <ol> <li> <dl> <dt> <dd> <h1> <h2> <h3> <h4> <h5> <h6> <pre> <p> <br> <table> <tr> <td> <iframe>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <sup> <sub> <acronym> <abbr> <ul> <ol> <li> <dl> <dt> <dd> <h1> <h2> <h3> <h4> <h5> <h6> <pre> <p> <br> <table> <tr> <td> <iframe> <img>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),

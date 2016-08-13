@@ -5,3 +5,18 @@
  */
 
 include_once 'campsite_account.features.inc';
+
+/**
+ * Implements hook_form_alter().
+ */
+function campsite_account_form_alter(&$form, &$form_state, $form_id) {
+  // Hide unnecessary fields from registration form for anonymous users.
+  if(!user_is_logged_in() && $form_id === 'user_register_form') {
+    unset($form['field_user_picture']);
+    unset($form['field_user_social_dorg']);
+    unset($form['field_user_about_me']);
+    unset($form['field_user_social_facebook']);
+    unset($form['field_user_social_linkedin']);
+    unset($form['field_user_social_twitter']);
+  }
+}

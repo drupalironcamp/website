@@ -83,3 +83,21 @@ function campsite_update_7001() {
     module_disable(array('sharethis'));
   }
 }
+
+/**
+ * Enable IMCE module.
+ */
+function campsite_update_7002() {
+  if (!module_exists('imce')) {
+    module_enable(array('imce'));
+  }
+}
+
+/**
+ * Enable Google Analytics module.
+ */
+function campsite_update_7003() {
+  if (!module_exists('google_analytics')) {
+    module_enable(array('google_analytics'));
+  }
+}
