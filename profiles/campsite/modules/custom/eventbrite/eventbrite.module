@@ -30,7 +30,7 @@ function eventbrite_webhook_process() {
     }
     $request_url = $webhook['api_url'] . '?expand=attendees&token=' . $token;
     $order = json_decode(file_get_contents($request_url), TRUE);
-    watchdog('eventbrite', 'eventbrite_webhook_process: !order', array(
+    watchdog('eventbrite', 'eventbrite_webhook_process: Eventbrite API response: !order', array(
       '!order' => '<pre>' . print_r($order, TRUE) . '</pre>',
     ), WATCHDOG_DEBUG);
     return FALSE;
@@ -40,7 +40,7 @@ function eventbrite_webhook_process() {
       if (user_load_by_mail($email) === FALSE) {
         $account = drupal_anonymous_user();
         $account->mail = $email;
-        $account->name = $email;
+        $account->name = $attendee['profile']['name'];
         $account->status = 1;
         $account = user_save($account);
         // Modify user role, if any is selected
