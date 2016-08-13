@@ -104,6 +104,9 @@ function campsite_account_ds_layout_settings_info() {
         11 => 'field_user_social_dorg',
         12 => 'field_user_job_speeding_date',
         13 => 'field_user_participate_days',
+        14 => 'flag_volunteer',
+        15 => 'flag_individual_sponsor',
+        16 => 'flag_featured_attendees',
       ),
     ),
     'fields' => array(
@@ -121,6 +124,9 @@ function campsite_account_ds_layout_settings_info() {
       'field_user_social_dorg' => 'right',
       'field_user_job_speeding_date' => 'right',
       'field_user_participate_days' => 'right',
+      'flag_volunteer' => 'right',
+      'flag_individual_sponsor' => 'right',
+      'flag_featured_attendees' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -162,6 +168,9 @@ function campsite_account_ds_layout_settings_info() {
         7 => 'field_user_social_linkedin',
         8 => 'field_user_social_dorg',
         9 => 'field_user_participate_days',
+        10 => 'flag_volunteer',
+        11 => 'flag_featured_attendees',
+        12 => 'flag_individual_sponsor',
       ),
     ),
     'fields' => array(
@@ -175,6 +184,9 @@ function campsite_account_ds_layout_settings_info() {
       'field_user_social_linkedin' => 'right',
       'field_user_social_dorg' => 'right',
       'field_user_participate_days' => 'right',
+      'flag_volunteer' => 'right',
+      'flag_featured_attendees' => 'right',
+      'flag_individual_sponsor' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
