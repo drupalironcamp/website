@@ -6197,6 +6197,22 @@ button.close {
 .more-link.danger {
   color: #ff841c;
 }
+.view-content:before,
+.view-content:after {
+  content: " ";
+  display: table;
+}
+.view-content:after {
+  clear: both;
+}
+.view-content:before,
+.view-content:after {
+  content: " ";
+  display: table;
+}
+.view-content:after {
+  clear: both;
+}
 .views-exposed-form .views-exposed-widget {
   float: left;
   /* LTR */
@@ -7472,6 +7488,7 @@ fieldset[disabled] .pane-signup input.button.active {
   display: inline-block;
 }
 .page-user .group-header .field-name-field-user-job-title {
+  color: #cb085e;
   clear: left;
   float: left;
   margin-right: 0.5em;
@@ -7593,7 +7610,6 @@ fieldset[disabled] .pane-signup input.button.active {
 .page-community-volunteers .pane-content .views-row,
 .page-sponsors .pane-content .views-row {
   margin-bottom: 20px;
-  height: 200px;
   overflow: hidden;
   float: left;
   width: 50%;
@@ -7601,8 +7617,9 @@ fieldset[disabled] .pane-signup input.button.active {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .page-community-attendees .pane-content .views-row,
   .page-community-volunteers .pane-content .views-row,
   .page-sponsors .pane-content .views-row {
@@ -7610,20 +7627,57 @@ fieldset[disabled] .pane-signup input.button.active {
     width: 33.33333333%;
   }
 }
-.page-community-attendees .pane-content .views-row .user-image,
-.page-community-volunteers .pane-content .views-row .user-image,
-.page-sponsors .pane-content .views-row .user-image {
+@media (min-width: 992px) {
+  .page-community-attendees .pane-content .views-row,
+  .page-community-volunteers .pane-content .views-row,
+  .page-sponsors .pane-content .views-row {
+    float: left;
+    width: 25%;
+  }
+}
+.page-community-attendees .pane-content .views-row:nth-child(2n+3),
+.page-community-volunteers .pane-content .views-row:nth-child(2n+3),
+.page-sponsors .pane-content .views-row:nth-child(2n+3) {
+  clear: left;
+}
+@media (min-width: 768px) {
+  .page-community-attendees .pane-content .views-row:nth-child(2n+3),
+  .page-community-volunteers .pane-content .views-row:nth-child(2n+3),
+  .page-sponsors .pane-content .views-row:nth-child(2n+3) {
+    clear: none;
+  }
+  .page-community-attendees .pane-content .views-row:nth-child(3n+4),
+  .page-community-volunteers .pane-content .views-row:nth-child(3n+4),
+  .page-sponsors .pane-content .views-row:nth-child(3n+4) {
+    clear: left;
+  }
+}
+@media (min-width: 992px) {
+  .page-community-attendees .pane-content .views-row:nth-child(3n+4),
+  .page-community-volunteers .pane-content .views-row:nth-child(3n+4),
+  .page-sponsors .pane-content .views-row:nth-child(3n+4) {
+    clear: none;
+  }
+  .page-community-attendees .pane-content .views-row:nth-child(4n+5),
+  .page-community-volunteers .pane-content .views-row:nth-child(4n+5),
+  .page-sponsors .pane-content .views-row:nth-child(4n+5) {
+    clear: left;
+  }
+}
+.page-community-attendees .pane-content .views-row .field-name-field-user-picture,
+.page-community-volunteers .pane-content .views-row .field-name-field-user-picture,
+.page-sponsors .pane-content .views-row .field-name-field-user-picture {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   display: block;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   background-color: #cb085e;
 }
-.page-community-attendees .pane-content .views-row .user-image img,
-.page-community-volunteers .pane-content .views-row .user-image img,
-.page-sponsors .pane-content .views-row .user-image img {
+.page-community-attendees .pane-content .views-row .field-name-field-user-picture img,
+.page-community-volunteers .pane-content .views-row .field-name-field-user-picture img,
+.page-sponsors .pane-content .views-row .field-name-field-user-picture img {
   display: block;
   width: 100%;
   height: auto;
@@ -7637,26 +7691,30 @@ fieldset[disabled] .pane-signup input.button.active {
   margin-top: 18px;
   background-color: #cb085e;
 }
-.page-community-attendees .pane-content .views-row .name,
-.page-community-volunteers .pane-content .views-row .name,
-.page-sponsors .pane-content .views-row .name {
-  text-align: center;
-}
-.page-community-attendees .pane-content .views-row .name .field,
-.page-community-volunteers .pane-content .views-row .name .field,
-.page-sponsors .pane-content .views-row .name .field {
-  margin: 0 auto;
-  color: #cb085e;
-  font-weight: 600;
-  font-size: 18px;
-  display: inline-block;
-}
 .page-community-attendees .pane-content .views-row .field-name-field-user-job-title,
 .page-community-volunteers .pane-content .views-row .field-name-field-user-job-title,
 .page-sponsors .pane-content .views-row .field-name-field-user-job-title {
   float: none;
   text-align: center;
   color: #cb085e;
+}
+.page-community-attendees .pane-content .views-row .field-name-field-user-first-name,
+.page-community-volunteers .pane-content .views-row .field-name-field-user-first-name,
+.page-sponsors .pane-content .views-row .field-name-field-user-first-name,
+.page-community-attendees .pane-content .views-row .field-name-field-user-last-name,
+.page-community-volunteers .pane-content .views-row .field-name-field-user-last-name,
+.page-sponsors .pane-content .views-row .field-name-field-user-last-name {
+  color: #cb085e;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 22px;
+  margin-right: 0.3em;
+}
+.page-community-attendees .pane-content .views-row .field-name-field-user-organization,
+.page-community-volunteers .pane-content .views-row .field-name-field-user-organization,
+.page-sponsors .pane-content .views-row .field-name-field-user-organization {
+  color: #777777;
+  font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .page-community-attendees .pane-content .view-content + .text-center,

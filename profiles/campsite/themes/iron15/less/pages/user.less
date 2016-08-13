@@ -156,6 +156,7 @@
       }
     }
     .field-name-field-user-job-title {
+      color: @brand-primary;
       clear: left;
       float: left;
       margin-right: 0.5em;
@@ -178,8 +179,6 @@
   // Styles for left column {
   .group-left {
     .field-name-field-user-picture {
-
-
       img {
         width: 100%;
 
@@ -287,18 +286,41 @@
     }
     .views-row {
       margin-bottom: 20px;
-      height: 200px;
+//      height: 200px;
       overflow: hidden;
       .make-xs-column(6);
-      .make-md-column(4);
+      .make-sm-column(4);
+      .make-md-column(3);
+      text-align: center;
 
-      .user-image {
+        &:nth-child(2n+3){
+          clear: left;
+        }
+
+      @media (min-width: @screen-sm-min) {
+        &:nth-child(2n+3){
+          clear: none;
+        }
+        &:nth-child(3n+4){
+          clear: left;
+        }
+      }
+      @media (min-width: @screen-md-min) {
+        &:nth-child(3n+4){
+          clear: none;
+        }
+        &:nth-child(4n+5){
+          clear: left;
+        }
+      }
+
+      .field-name-field-user-picture {
         width: 100px;
         height: 100px;
         border-radius: 50%;
         display: block;
         overflow: hidden;
-        margin: 0 auto;
+        margin: 0 auto 1em;
         background-color: @brand-primary;
 
         img {
@@ -315,22 +337,22 @@
         background-color: @brand-primary;
 
       }
-      .name {
-        text-align: center;
-
-        .field {
-          margin: 0 auto;
-          color: @brand-primary;
-          font-weight: 600;
-          font-size: 18px;
-          display: inline-block;
-        }
-
-      }
       .field-name-field-user-job-title {
         float: none;
         text-align: center;
         color: @brand-primary;
+      }
+      .field-name-field-user-first-name,
+      .field-name-field-user-last-name {
+        color: @brand-primary;
+        display: inline-block;
+        font-weight: 600;
+        font-size: @font-size-h3;
+        margin-right: 0.3em;
+      }
+      .field-name-field-user-organization {
+        color: @gray-light;
+        font-size: @font-size-small;
       }
     }
 
