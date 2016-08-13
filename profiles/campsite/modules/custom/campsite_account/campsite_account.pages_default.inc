@@ -16,7 +16,10 @@ function campsite_account_default_page_manager_pages() {
   $page->admin_title = 'Attendees';
   $page->admin_description = '';
   $page->path = 'community/%user_list';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array(
     'user_list' => array(
