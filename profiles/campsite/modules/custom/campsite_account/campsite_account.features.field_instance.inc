@@ -35,7 +35,7 @@ function campsite_account_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 4,
       ),
       'list' => array(
         'label' => 'above',
@@ -88,7 +88,7 @@ function campsite_account_field_default_field_instances() {
         'module' => 'countries',
         'settings' => array(),
         'type' => 'country_default',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'list' => array(
         'label' => 'above',
@@ -138,7 +138,7 @@ function campsite_account_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 14,
       ),
       'list' => array(
         'label' => 'above',
@@ -191,7 +191,7 @@ function campsite_account_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'list' => array(
         'label' => 'above',
@@ -244,7 +244,7 @@ function campsite_account_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 15,
       ),
       'list' => array(
         'label' => 'above',
@@ -298,7 +298,7 @@ function campsite_account_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 2,
       ),
       'list' => array(
         'label' => 'above',
@@ -360,7 +360,7 @@ function campsite_account_field_default_field_instances() {
           'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => 5,
+        'weight' => 3,
       ),
       'list' => array(
         'label' => 'above',
@@ -425,7 +425,7 @@ function campsite_account_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 10,
+        'weight' => 8,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -495,7 +495,7 @@ function campsite_account_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 7,
+        'weight' => 5,
       ),
       'list' => array(
         'label' => 'above',
@@ -565,7 +565,7 @@ function campsite_account_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -635,7 +635,7 @@ function campsite_account_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 6,
       ),
       'list' => array(
         'label' => 'hidden',

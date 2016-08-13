@@ -41,16 +41,46 @@ function campsite_account_strongarm() {
       'display' => array(
         'summary' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '17',
             'visible' => FALSE,
           ),
           'full' => array(
-            'weight' => '5',
+            'weight' => '16',
             'visible' => FALSE,
           ),
           'attendee' => array(
             'weight' => '5',
             'visible' => FALSE,
+          ),
+        ),
+        'flag_featured_attendees' => array(
+          'full' => array(
+            'weight' => '11',
+            'visible' => TRUE,
+          ),
+          'default' => array(
+            'weight' => '16',
+            'visible' => TRUE,
+          ),
+        ),
+        'flag_volunteer' => array(
+          'default' => array(
+            'weight' => '14',
+            'visible' => TRUE,
+          ),
+          'full' => array(
+            'weight' => '10',
+            'visible' => TRUE,
+          ),
+        ),
+        'flag_individual_sponsor' => array(
+          'default' => array(
+            'weight' => '15',
+            'visible' => TRUE,
+          ),
+          'full' => array(
+            'weight' => '12',
+            'visible' => TRUE,
           ),
         ),
       ),
