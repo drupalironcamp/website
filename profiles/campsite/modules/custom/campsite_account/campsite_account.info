@@ -41,6 +41,7 @@ features[field_base][] = field_user_social_dorg
 features[field_base][] = field_user_social_facebook
 features[field_base][] = field_user_social_linkedin
 features[field_base][] = field_user_social_twitter
+features[field_group][] = group_name|user|user|attendee
 features[field_group][] = group_user_social_links|user|user|form
 features[field_instance][] = user-user-field_user_about_me
 features[field_instance][] = user-user-field_user_country

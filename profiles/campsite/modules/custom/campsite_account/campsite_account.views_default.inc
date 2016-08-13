@@ -133,7 +133,7 @@ function campsite_account_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a class="more-link info" href="/comunity/attendees">More Attendees<span></span></a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a class="more-link info" href="/community/attendees">More Attendees<span></span></a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Flags: featured_attendees */
