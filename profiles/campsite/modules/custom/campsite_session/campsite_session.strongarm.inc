@@ -36,7 +36,17 @@ function campsite_session_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'mollom' => array(
+          'weight' => '11',
+        ),
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '10',
+        ),
+      ),
       'display' => array(
         'flag_vote_for_session' => array(
           'default' => array(
