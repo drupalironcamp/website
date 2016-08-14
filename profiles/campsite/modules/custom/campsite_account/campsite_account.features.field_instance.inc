@@ -405,7 +405,7 @@ function campsite_account_field_default_field_instances() {
     'bundle' => 'user',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://drupal.org/user/103042 just copy 103042. Thanks!',
+    'description' => 'Please copy the whole URL.',
     'display' => array(
       'attendee' => array(
         'label' => 'above',
@@ -475,7 +475,7 @@ function campsite_account_field_default_field_instances() {
     'bundle' => 'user',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://facebook.com/bruce.wayne just copy bruce.wayne. Thanks!',
+    'description' => 'Please copy the whole URL.',
     'display' => array(
       'attendee' => array(
         'label' => 'above',
@@ -545,7 +545,7 @@ function campsite_account_field_default_field_instances() {
     'bundle' => 'user',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please check your LinkedIn profile’s URL, and copy the end of it: e. g. if your link says: http://www.linkedin.com/in/drupalmarvin just copy in/drupalmarvin.',
+    'description' => 'Please copy the whole URL.',
     'display' => array(
       'attendee' => array(
         'label' => 'above',
@@ -615,7 +615,7 @@ function campsite_account_field_default_field_instances() {
     'bundle' => 'user',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://twitter.com/imBatman just copy imBatman. Thanks!',
+    'description' => 'Please copy the whole URL.',
     'display' => array(
       'attendee' => array(
         'label' => 'above',
@@ -692,10 +692,7 @@ function campsite_account_field_default_field_instances() {
   t('Linkedin');
   t('Organization');
   t('Picture');
-  t('Please check your LinkedIn profile’s URL, and copy the end of it: e. g. if your link says: http://www.linkedin.com/in/drupalmarvin just copy in/drupalmarvin.');
-  t('Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://drupal.org/user/103042 just copy 103042. Thanks!');
-  t('Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://facebook.com/bruce.wayne just copy bruce.wayne. Thanks!');
-  t('Please copy your name (user ID without prefix) from the end of the URLs: e. g.  if your link says: https://twitter.com/imBatman just copy imBatman. Thanks!');
+  t('Please copy the whole URL.');
   t('Twitter');
 
   return $field_instances;
