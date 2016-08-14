@@ -107,33 +107,22 @@ function campsite_session_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_session_keywords',
     'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'entityreference',
+    'module' => 'taxonomy',
     'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'direction' => 'ASC',
-          'property' => 'weight',
-          'type' => 'property',
-        ),
-        'target_bundles' => array(
-          'keywords' => 'keywords',
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'keywords',
+          'parent' => 0,
         ),
       ),
-      'target_type' => 'taxonomy_term',
     ),
     'translatable' => 0,
-    'type' => 'entityreference',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_session_room'.
