@@ -239,6 +239,7 @@ input[type="search"] {
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
+  left: 0;
   position: absolute;
   margin-top: 4px \9;
 }
@@ -587,4 +588,9 @@ input[type="checkbox"] {
     #field_user_country-und-0-iso-wrapper select{
         .form-control();
     }
+}
+
+.form-autocomplete .dropdown {
+  position: absolute;
+  z-index: 1500;
 }
