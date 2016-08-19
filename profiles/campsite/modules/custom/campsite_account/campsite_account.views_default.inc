@@ -85,6 +85,13 @@ function campsite_account_views_default_views() {
   $handler->display->display_options['filters']['uid_raw_1']['field'] = 'uid_raw';
   $handler->display->display_options['filters']['uid_raw_1']['operator'] = '!=';
   $handler->display->display_options['filters']['uid_raw_1']['value']['value'] = '298';
+  /* Filter criterion: User: Roles */
+  $handler->display->display_options['filters']['rid']['id'] = 'rid';
+  $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
+  $handler->display->display_options['filters']['rid']['field'] = 'rid';
+  $handler->display->display_options['filters']['rid']['value'] = array(
+    3 => '3',
+  );
 
   /* Display: Individual sponsors */
   $handler = $view->new_display('panel_pane', 'Individual sponsors', 'individual_sponsor');
