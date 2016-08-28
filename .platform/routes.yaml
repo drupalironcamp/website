@@ -3,5 +3,5 @@
     upstream: "php:http"
 
 "http://www.{default}/":
-    type: redirect
-    to: "http://{default}/"
+    type: upstream
+    upstream: "php:http"
