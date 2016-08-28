@@ -1,7 +1,7 @@
-"http://www.{default}/":
-    type: upstream
-    upstream: "drupal:php"
-
 "http://{default}/":
+    type: upstream
+    upstream: "app:http"
+
+"http://www.{default}/":
     type: redirect
-    to: "http://www.{default}/"
+    to: "http://{default}/"
