@@ -1,19 +1,7 @@
-http://www.{default}/:
-  cache:
-    cookies:
-    - '*'
-    default_ttl: 0
-    enabled: true
-    headers:
-    - Accept
-    - Accept-Language
-  redirects:
-    expires: -1s
-    paths: {}
-  ssi:
-    enabled: false
-  type: upstream
-  upstream: php:php
-http://{default}/:
+"http://www.{default}/":
+    type: upstream
+    upstream: "drupal:php"
+
+"http://{default}/":
     type: redirect
-    to: http://www.{default}/
+    to: "http://www.{default}/"
