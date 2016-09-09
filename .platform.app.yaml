@@ -1,13 +1,11 @@
-name: php
-type: php:5.5
+name: app
+type: "php:5.5"
 build:
     flavor: drupal
 access:
     ssh: contributor
 relationships:
     database: "mysql:mysql"
-    solr: "solr:solr"
-    redis: "redis:redis"
 web:
     document_root: "/"
     passthru: "/index.php"
