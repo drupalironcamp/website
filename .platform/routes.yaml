@@ -5,8 +5,18 @@ http://www.{default}/:
   to: http://{default}
   type: redirect
 http://{default}/:
+  cache:
+    cookies:
+    - '*'
+    default_ttl: 0
+    enabled: true
+    headers:
+    - Accept
+    - Accept-Language
   redirects:
     expires: -1s
     paths: {}
-  to: http://www.{default}
-  type: redirect
+  ssi:
+    enabled: false
+  type: upstream
+  upstream: app:php
