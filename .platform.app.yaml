@@ -6,8 +6,6 @@ access:
     ssh: contributor
 relationships:
     database: "mysql:mysql"
-    solr: "solr:solr"
-    redis: "redis:redis"
 web:
     document_root: "/"
     passthru: "/index.php"
