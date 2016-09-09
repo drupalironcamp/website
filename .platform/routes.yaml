@@ -14,3 +14,9 @@ http://www.{default}/:
     enabled: false
   type: upstream
   upstream: php:php
+http://{default}/:
+  redirects:
+    expires: -1s
+    paths: {}
+  to: http://www.{default}/
+  type: redirect
