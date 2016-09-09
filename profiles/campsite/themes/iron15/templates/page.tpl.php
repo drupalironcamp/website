@@ -349,8 +349,11 @@
         </a>
         <div class="footer-message">2016 @ Built by the community
           <div class="footer-links">
-            <?php print l(t('Disclaimer.'), 'disclaimer') . l(t('Code of conduct.'), 'node/16'); ?>
+            <?php print l(t('Disclaimer.'), 'disclaimer') . l(t('Code of conduct.'), 'node/16') . l(t('Photo by czfoto.cz'), 'http://www.czfoto.cz'); ?>
           </div>
+        </div>
+        <div class="footer-hosting">
+          <?php print t('Hosting powered by ') . l(t('Platform.sh'), 'https://platform.sh'); ?>
         </div>
       </div>
       <div class="svg-big-triangle01"></div>

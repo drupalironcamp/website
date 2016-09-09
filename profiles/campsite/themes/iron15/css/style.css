@@ -7168,17 +7168,20 @@ fieldset[disabled] .pane-signup input.button.active {
   }
 }
 .footer .svg-footer-background {
-  width: 100%;
-  max-width: 1260px;
-  background-position: top center;
-  background-size: 1360px;
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: none;
 }
 @media (min-width: 768px) {
   .footer .svg-footer-background {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201349%20675.9%22%3E%3Cpath%20d%3D%22M1349%200H0v675.9L1349%200z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1260px;
+    background-position: top center;
+    background-size: 1360px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-position: top right;
   }
 }
@@ -7194,10 +7197,6 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .footer .footer-message {
   width: 100%;
-  padding: 0 15px;
-  position: absolute;
-  left: 0;
-  bottom: 15px;
   font-size: 14px;
 }
 .footer .footer-message .footer-links a {
@@ -7215,11 +7214,8 @@ fieldset[disabled] .pane-signup input.button.active {
   display: inline-block;
   width: 125px;
   padding-top: 75px;
-  position: absolute;
   background-size: 60px;
   background-position: top center;
-  bottom: 35px;
-  right: 35px;
   font-size: 16px;
   font-family: 'novecento_sans_widenormal';
   text-align: right;
@@ -7231,16 +7227,6 @@ fieldset[disabled] .pane-signup input.button.active {
 .footer .footer-logo .title {
   font-size: 22px;
   font-family: 'novecento_sans_wide_bookbold';
-}
-@media (min-width: 768px) {
-  .footer .footer-logo {
-    right: 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .footer .footer-logo {
-    right: 15px;
-  }
 }
 .footer .region-footer {
   text-align: left;
@@ -7270,6 +7256,30 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .footer .region-footer .block-title {
   display: none;
+}
+.footer .footer-hosting {
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 5px 0;
+}
+.footer .footer-hosting a {
+  display: inline-block;
+  text-align: left;
+  text-indent: -9999px;
+}
+.footer .footer-hosting a:after {
+  background: url("../images/platformsh-logo.png") no-repeat center bottom;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  float: right;
+  height: 21px;
+  margin-left: 2px;
+  position: relative;
+  text-indent: -9999px;
+  top: -4px;
+  width: 100px;
+  outline: none;
 }
 .region-sidebar .menu.nav {
   border-top: 2px solid #242424;
