@@ -1,4 +1,4 @@
-name: php
+name: app
 type: "php:5.5"
 build:
     flavor: drupal
