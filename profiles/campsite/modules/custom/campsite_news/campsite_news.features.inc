@@ -42,6 +42,21 @@ function campsite_news_image_default_styles() {
     ),
   );
 
+  // Exported image style: news_teaser.
+  $styles['news_teaser'] = array(
+    'label' => 'News teaser',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 320,
+          'height' => 150,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 

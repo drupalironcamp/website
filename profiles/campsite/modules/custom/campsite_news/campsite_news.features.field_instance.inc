@@ -139,7 +139,7 @@ function campsite_news_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => 'content',
-          'image_style' => '',
+          'image_style' => 'news_teaser',
         ),
         'type' => 'image',
         'weight' => 1,
