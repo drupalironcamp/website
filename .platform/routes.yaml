@@ -13,7 +13,7 @@ http://www.{default}/:
   ssi:
     enabled: false
   type: upstream
-  upstream: php:php
+  upstream: app:php
 http://{default}/:
   redirects:
     expires: -1s
