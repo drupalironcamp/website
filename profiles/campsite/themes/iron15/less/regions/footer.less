@@ -1,113 +1,140 @@
 // Insert your styling here.
 .footer{
-    position: relative;
-    background: @gray;
-    min-height: 320px;
+  position: relative;
+  background: @gray;
+  min-height: 320px;
 
-    @media (min-width: 1260px){
-      background: -moz-linear-gradient(-90deg,  #000000 0%, #000000 40%, @gray 40%, @gray 40%, @gray 100%);
-      background: -webkit-gradient(-90deg, linear, left top, right bottom, color-stop(0%,#000000), color-stop(40%,#000000), color-stop(40%,@gray), color-stop(40%,@gray), color-stop(100%,@gray));
-      background: -o-linear-gradient(-90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
-      background: -ms-linear-gradient(-90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
-      background: linear-gradient(90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='@gray',GradientType=1 );
-    }
+  @media (min-width: 1260px){
+    background: -moz-linear-gradient(-90deg,  #000000 0%, #000000 40%, @gray 40%, @gray 40%, @gray 100%);
+    background: -webkit-gradient(-90deg, linear, left top, right bottom, color-stop(0%,#000000), color-stop(40%,#000000), color-stop(40%,@gray), color-stop(40%,@gray), color-stop(100%,@gray));
+    background: -o-linear-gradient(-90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
+    background: -ms-linear-gradient(-90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
+    background: linear-gradient(90deg,  #000000 0%,#000000 40%,@gray 40%,@gray 40%,@gray 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='@gray',GradientType=1 );
+  }
 
-    .svg-footer-background{
+  .svg-footer-background{
+    background-image: none;
+    @media (min-width: @screen-sm){
+      background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201349%20675.9%22%3E%3Cpath%20d%3D%22M1349%200H0v675.9L1349%200z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat;
       width: 100%;
       max-width: 1260px;
       background-position: top center;
       background-size: 1360px;
       position: relative;
       .center-block();
-      @media (min-width: @screen-sm){
-        background-position: top right;
-      }
+      background-position: top right;
     }
+  }
 
-    .container{
-        position: relative;
-//        height: 604px;
-        text-align: center;
-        @media (min-width: @screen-sm){
-          min-height: 320px;
-          text-align: right;
-        }
-    }
-
-    .footer-message{
-      width: 100%;
-      padding: 0 @grid-gutter-width/2;
-      position: absolute;
-      left: 0;
-      bottom: 15px;
-      font-size: 14px;
-      .footer-links a{
-          text-decoration: underline;
-          + a{
-              margin-left: 4px;
-          }
-      }
-      @media (min-width: @screen-sm){
-//        bottom: 50px;
-        .footer-links{
-          display: inline;
-        }
-      }
-    }
-
-    .footer-logo{
-      display: inline-block;
-      width: 125px;
-      padding-top: 75px;
-      position: absolute;
-      background-size: 60px;
-      background-position: top center;
-      bottom: 35px;
-      right: 35px;
-      font-size: 16px;
-      font-family: @nsw-normal;
+  .container{
+    position: relative;
+    //        height: 604px;
+    text-align: center;
+    @media (min-width: @screen-sm){
+      min-height: 320px;
       text-align: right;
-      color: black;
-      &:hover{
-        text-decoration: none;
+    }
+  }
+
+  .footer-message{
+    width: 100%;
+    //padding: 0 @grid-gutter-width/2;
+    //position: absolute;
+    //left: 0;
+    //bottom: 15px;
+    font-size: 14px;
+    .footer-links a{
+      text-decoration: underline;
+      + a{
+        margin-left: 4px;
       }
-      .title{
-        font-size: 22px;
-        font-family: @nsw-bookbold;
+    }
+    @media (min-width: @screen-sm){
+      //        bottom: 50px;
+      .footer-links{
+        display: inline;
       }
+    }
+  }
+
+  .footer-logo{
+    display: inline-block;
+    width: 125px;
+    padding-top: 75px;
+    //position: absolute;
+    background-size: 60px;
+    background-position: top center;
+    //bottom: 35px;
+    //right: 35px;
+    font-size: 16px;
+    font-family: @nsw-normal;
+    text-align: right;
+    color: black;
+    &:hover{
+      text-decoration: none;
+    }
+    .title{
+      font-size: 22px;
+      font-family: @nsw-bookbold;
+    }
+    //@media (min-width: @screen-sm){
+    //  right: 0;
+    //}
+    //@media (min-width: @screen-sm) and (max-width: @screen-md-max){
+    //  right: 15px;
+    //}
+  }
+
+  .region-footer{
+    text-align: left;
+    .block{
+      margin: 40px auto 0 auto;
+      padding-left: 0;
+      background-size: 30px;
+      padding-top: 30px;
+      background-position: 5px 10px;
       @media (min-width: @screen-sm){
-          right: 0;
+        margin-top: 60px;
+        padding-top: 0;
+        padding-left: 58px;
       }
-      @media (min-width: @screen-sm) and (max-width: @screen-md-max){
-          right: 15px;
+      @media (min-width: @screen-md){
+        margin-left: 150px;
+      }
+      iframe{
+        max-width: 590px!important; // i hate you!
+        width: 100%!important;
       }
     }
-
-    .region-footer{
-        text-align: left;
-        .block{
-            margin: 40px auto 0 auto;
-            padding-left: 0;
-            background-size: 30px;
-            padding-top: 30px;
-            background-position: 5px 10px;
-            @media (min-width: @screen-sm){
-                margin-top: 60px;
-                padding-top: 0;
-                padding-left: 58px;
-            }
-            @media (min-width: @screen-md){
-                margin-left: 150px;
-            }
-            iframe{
-                max-width: 590px!important; // i hate you!
-                width: 100%!important;
-            }
-        }
-        .block-title{
-            display: none;
-        }
+    .block-title{
+      display: none;
     }
+  }
 
+  .footer-hosting {
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px 0;
+
+    a {
+      display: inline-block;
+      text-align: left;
+      text-indent: -9999px;
+    }
+    a:after {
+      background: url("../images/platformsh-logo.png") no-repeat center bottom;
+      background-size: contain;
+      content: "";
+      display: inline-block;
+      float: right;
+      height: 21px;
+      margin-left: 2px;
+      position: relative;
+      text-indent: -9999px;
+      top: -4px;
+      width: 100px;
+      outline: none;
+    }
+  }
 }
