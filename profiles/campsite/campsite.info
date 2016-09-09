@@ -31,14 +31,12 @@ dependencies[] = menu_block
 dependencies[] = token
 dependencies[] = pathauto
 dependencies[] = imce
-dependencies[] = google_analytics
 
 ; Custom.
 dependencies[] = campsite_codesprint
 dependencies[] = campsite_core
 dependencies[] = campsite_account
 dependencies[] = campsite_export_user_datas
-dependencies[] = campsite_main_menu
 dependencies[] = campsite_news
 dependencies[] = campsite_page
 dependencies[] = campsite_session
