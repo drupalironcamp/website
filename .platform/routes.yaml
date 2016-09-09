@@ -18,5 +18,5 @@ http://{default}/:
   redirects:
     expires: -1s
     paths: {}
-  to: http://www.{default}/
+  to: http://www.{default}
   type: redirect
