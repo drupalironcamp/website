@@ -11,6 +11,16 @@
           left: 0;
           color: @body-bg;
 
+          a {
+            color: @body-bg;
+            cursor: pointer;
+            text-decoration: underline;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+
           @media screen and (min-width: @screen-md) {
             top: 70px;
             left: 20px;
