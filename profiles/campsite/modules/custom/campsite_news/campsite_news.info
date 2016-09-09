@@ -22,6 +22,7 @@ features[field_instance][] = node-news-body
 features[field_instance][] = node-news-field_news_link
 features[field_instance][] = node-news-field_news_slideshow
 features[image][] = news
+features[image][] = news_teaser
 features[node][] = news
 features[variable][] = field_bundle_settings_node__news
 features[variable][] = menu_options_news

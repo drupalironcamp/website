@@ -5501,6 +5501,14 @@ button.close {
   left: 0;
   color: #ffffff;
 }
+.front .region-content .pane-content .form-signup #mce-responses a {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.front .region-content .pane-content .form-signup #mce-responses a:hover {
+  text-decoration: none;
+}
 @media screen and (min-width: 992px) {
   .front .region-content .pane-content .form-signup #mce-responses {
     top: 70px;
