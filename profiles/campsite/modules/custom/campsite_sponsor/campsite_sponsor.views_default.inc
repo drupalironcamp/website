@@ -22,7 +22,7 @@ function campsite_sponsor_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Platinum';
+  $handler->display->display_options['title'] = 'Sponsors';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -65,7 +65,7 @@ function campsite_sponsor_views_default_views() {
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['relationship'] = 'field_sponsor_category_target_id';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   /* Filter criterion: Content: Published */
@@ -233,6 +233,85 @@ function campsite_sponsor_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_category_target_id']['value'] = array(
     9 => '9',
   );
+
+  /* Display: Sponsor page */
+  $handler = $view->new_display('page', 'Sponsor page', 'page_1');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'field_sponsor_category',
+      'rendered' => 1,
+      'rendered_strip' => 0,
+    ),
+  );
+  $handler->display->display_options['style_options']['row_class'] = '[field_sponsor_category]';
+  $handler->display->display_options['style_options']['uses_fields'] = TRUE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entity';
+  $handler->display->display_options['row_options']['view_mode'] = 'list';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'sponsor_category' => 'sponsor_category',
+    'experience_level' => 0,
+    'keywords' => 0,
+    'location' => 0,
+    'session_type' => 0,
+    'track' => 0,
+  );
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_sponsor_category']['id'] = 'field_sponsor_category';
+  $handler->display->display_options['fields']['field_sponsor_category']['table'] = 'field_data_field_sponsor_category';
+  $handler->display->display_options['fields']['field_sponsor_category']['field'] = 'field_sponsor_category';
+  $handler->display->display_options['fields']['field_sponsor_category']['label'] = '';
+  $handler->display->display_options['fields']['field_sponsor_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_sponsor_category']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_sponsor_category']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_sponsor_category']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Category (field_sponsor_category) */
+  $handler->display->display_options['sorts']['field_sponsor_category_target_id']['id'] = 'field_sponsor_category_target_id';
+  $handler->display->display_options['sorts']['field_sponsor_category_target_id']['table'] = 'field_data_field_sponsor_category';
+  $handler->display->display_options['sorts']['field_sponsor_category_target_id']['field'] = 'field_sponsor_category_target_id';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['order'] = 'DESC';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'sponsor' => 'sponsor',
+  );
+  $handler->display->display_options['path'] = 'sponsors';
   $export['sponsor'] = $view;
 
   return $export;
