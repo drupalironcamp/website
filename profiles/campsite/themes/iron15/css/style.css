@@ -6710,14 +6710,14 @@ button.close {
     width: 20%;
   }
 }
-.page-sponsors .view-sponsor h3 {
+.page-sponsors .panel-display h2.pane-title {
   border-bottom: 1px solid #cb085e;
   margin-bottom: 2em;
   padding-bottom: 1em;
   text-align: center;
   width: 100%;
 }
-.page-sponsors .view-sponsor .item-list > ul {
+.page-sponsors .panel-display .item-list > ul {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -6732,42 +6732,59 @@ button.close {
           justify-content: center;
   margin: 0 0 2em 0;
 }
-.page-sponsors .view-sponsor .item-list > ul img {
+.page-sponsors .panel-display .item-list > ul img {
   display: inline-block;
 }
-.page-sponsors .view-sponsor .views-row {
+.page-sponsors .panel-display .panel-pane .views-row {
   margin-bottom: 3em;
   padding: 0 20px;
   text-align: center;
   width: 33%;
 }
 @media (min-width: 768px) {
-  .page-sponsors .view-sponsor .views-row {
+  .page-sponsors .panel-display .panel-pane .views-row {
     width: 15%;
   }
 }
-.page-sponsors .view-sponsor .views-row.platinum {
+.page-sponsors .panel-display .panel-pane.diamond .views-row {
   width: 100%;
 }
 @media (min-width: 768px) {
-  .page-sponsors .view-sponsor .views-row.platinum {
+  .page-sponsors .panel-display .panel-pane.diamond .views-row {
     width: 50%;
   }
 }
-.page-sponsors .view-sponsor .views-row.gold {
+.page-sponsors .panel-display .panel-pane.platinum .views-row {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .page-sponsors .panel-display .panel-pane.platinum .views-row {
+    padding: 0 40px;
+    width: 50%;
+  }
+}
+.page-sponsors .panel-display .panel-pane.gold .views-row {
   width: 50%;
 }
 @media (min-width: 768px) {
-  .page-sponsors .view-sponsor .views-row.gold {
+  .page-sponsors .panel-display .panel-pane.gold .views-row {
     width: 33%;
   }
 }
-.page-sponsors .view-sponsor .views-row.silver {
+.page-sponsors .panel-display .panel-pane.silver .views-row {
   width: 50%;
 }
 @media (min-width: 768px) {
-  .page-sponsors .view-sponsor .views-row.silver {
+  .page-sponsors .panel-display .panel-pane.silver .views-row {
     width: 25%;
+  }
+}
+.page-sponsors .panel-display .panel-pane.bronze .views-row {
+  width: 33%;
+}
+@media (min-width: 768px) {
+  .page-sponsors .panel-display .panel-pane.bronze .views-row {
+    width: 20%;
   }
 }
 .node-news.node-promoted h2 a,
