@@ -1,47 +1,100 @@
-.front .view-sponsor{
-    &:extend(.view-circled-teasers all);
-}
+.front {
+  .view-sponsor {
+    .view-content {
+      &:extend(.container);
+      align-items: stretch;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-.node-sponsor{
-    .img-circle{
-      overflow: hidden;
-      background-color: @gray;
-      .square(220px);
+      > div {
+        margin: 0;
+        padding: 0 20px;
+        text-align: center;
+
+        img {
+          display: inline-block;
+        }
+      }
+    }
+    .view-footer {
+      margin-top: 2em;
+      text-align: center;
+    }
+  }
+  .pane-sponsor-panel-pane-1,
+  .pane-sponsor-panel-pane-2 {
+    h2.pane-title {
+      margin-bottom: 1.5em;
+    }
   }
 }
 
-.gold{
-  .img-responsive {
-    .square(140px);
+.node-sponsor{
+  .img-circle{
+    overflow: hidden;
+    background-color: @gray;
+    .square(220px);
+  }
+}
+
+.front .gold {
+  .view-content > div {
+    width: 50%;
+    @media (min-width: @screen-sm-min) {
+      width: 20%;
+    }
   }
 }
 
 .page-sponsors{
 
-  h2.pane-title{
-    width: 100%;
-    float: left;
-  }
+  .view-sponsor {
+    h3 {
+      border-bottom: 1px solid @brand-primary;
+      margin-bottom: 2em;
+      padding-bottom: 1em;
+      text-align: center;
+      width: 100%;
+    }
 
-  .pane-content{
-    .item-list {
-      h2 {
-        font-size: 18px;
-        margin: 15px 15px 10px;
+    .item-list > ul {
+      align-items: stretch;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 0 2em 0;
+
+      img {
+        display: inline-block;
       }
-      .views-row{
-        height: 300px;
+    }
 
-        .field-type-text-with-summary,
-        .field-name-field-sponsor-category {
-          display: none;
+    .views-row {
+      margin-bottom: 3em;
+      padding: 0 20px;
+      text-align: center;
+      width: 33%;
+      @media (min-width: @screen-sm-min) {
+        width: 15%;
+      }
+
+      &.platinum {
+        width: 100%;
+        @media (min-width: @screen-sm-min) {
+          width: 50%;
         }
-        .img-sponsors img {
-          margin: 0 auto;
+      }
+      &.gold {
+        width: 50%;
+        @media (min-width: @screen-sm-min) {
+          width: 33%;
         }
-        .field-name-field-sponsor-link {
-          margin-top: 10px;
-          text-align: center;
+      }
+      &.silver {
+        width: 50%;
+        @media (min-width: @screen-sm-min) {
+          width: 25%;
         }
       }
     }
