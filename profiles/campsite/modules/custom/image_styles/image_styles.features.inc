@@ -14,13 +14,14 @@ function image_styles_image_default_styles() {
   $styles['sponsors_large'] = array(
     'label' => 'Sponsors - large',
     'effects' => array(
-      3 => array(
-        'name' => 'image_scale_and_crop',
+      4 => array(
+        'name' => 'image_scale',
         'data' => array(
-          'width' => 300,
+          'width' => '',
           'height' => 200,
+          'upscale' => 0,
         ),
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
