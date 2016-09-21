@@ -49,8 +49,8 @@
 
 .page-sponsors{
 
-  .view-sponsor {
-    h3 {
+  .panel-display {
+    h2.pane-title {
       border-bottom: 1px solid @brand-primary;
       margin-bottom: 2em;
       padding-bottom: 1em;
@@ -70,31 +70,45 @@
       }
     }
 
-    .views-row {
-      margin-bottom: 3em;
-      padding: 0 20px;
-      text-align: center;
-      width: 33%;
-      @media (min-width: @screen-sm-min) {
-        width: 15%;
+    .panel-pane {
+      .views-row {
+        margin-bottom: 3em;
+        padding: 0 20px;
+        text-align: center;
+        width: 33%;
+        @media (min-width: @screen-sm-min) {
+          width: 15%;
+        }
       }
-
-      &.platinum {
+      &.diamond .views-row  {
         width: 100%;
         @media (min-width: @screen-sm-min) {
           width: 50%;
         }
       }
-      &.gold {
+      &.platinum .views-row  {
+         width: 100%;
+         @media (min-width: @screen-sm-min) {
+           padding: 0 40px;
+           width: 50%;
+         }
+       }
+      &.gold .views-row {
         width: 50%;
         @media (min-width: @screen-sm-min) {
           width: 33%;
         }
       }
-      &.silver {
+      &.silver .views-row {
         width: 50%;
         @media (min-width: @screen-sm-min) {
           width: 25%;
+        }
+      }
+      &.bronze .views-row {
+        width: 33%;
+        @media (min-width: @screen-sm-min) {
+          width: 20%;
         }
       }
     }
