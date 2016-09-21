@@ -16,7 +16,10 @@ function campsite_sponsor_default_page_manager_pages() {
   $page->admin_title = 'Sponsors';
   $page->admin_description = '';
   $page->path = 'sponsors';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -96,6 +99,20 @@ function campsite_sponsor_default_page_manager_pages() {
         'entity_id' => '15',
         'id' => 8,
       ),
+      8 => array(
+        'identifier' => 'Diamond',
+        'keyword' => 'Diamond',
+        'name' => 'entity:taxonomy_term',
+        'entity_id' => '23',
+        'id' => 9,
+      ),
+      9 => array(
+        'identifier' => 'Bronze',
+        'keyword' => 'Bronze',
+        'name' => 'entity:taxonomy_term',
+        'entity_id' => '24',
+        'id' => 10,
+      ),
     ),
     'relationships' => array(),
   );
@@ -116,6 +133,35 @@ function campsite_sponsor_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
+  $pane->pid = 'new-987bf285-e50b-4c69-8c1e-b9652d020510';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsor-sponsor_argument_display';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => array(
+      0 => 'context_entity:taxonomy_term_9',
+    ),
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'diamond',
+  );
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '987bf285-e50b-4c69-8c1e-b9652d020510';
+  $display->content['new-987bf285-e50b-4c69-8c1e-b9652d020510'] = $pane;
+  $display->panels['middle'][0] = 'new-987bf285-e50b-4c69-8c1e-b9652d020510';
+  $pane = new stdClass();
   $pane->pid = 'new-1a234483-5ccb-4c81-bbe7-fcb92ffbf2d7';
   $pane->panel = 'middle';
   $pane->type = 'views_panes';
@@ -134,13 +180,16 @@ function campsite_sponsor_default_page_manager_pages() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'platinum',
+  );
   $pane->extras = array();
-  $pane->position = 0;
+  $pane->position = 1;
   $pane->locks = array();
   $pane->uuid = '1a234483-5ccb-4c81-bbe7-fcb92ffbf2d7';
   $display->content['new-1a234483-5ccb-4c81-bbe7-fcb92ffbf2d7'] = $pane;
-  $display->panels['middle'][0] = 'new-1a234483-5ccb-4c81-bbe7-fcb92ffbf2d7';
+  $display->panels['middle'][1] = 'new-1a234483-5ccb-4c81-bbe7-fcb92ffbf2d7';
   $pane = new stdClass();
   $pane->pid = 'new-cc89a585-860f-4394-8741-5276276ce477';
   $pane->panel = 'middle';
@@ -157,13 +206,16 @@ function campsite_sponsor_default_page_manager_pages() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'gold',
+  );
   $pane->extras = array();
-  $pane->position = 1;
+  $pane->position = 2;
   $pane->locks = array();
   $pane->uuid = 'cc89a585-860f-4394-8741-5276276ce477';
   $display->content['new-cc89a585-860f-4394-8741-5276276ce477'] = $pane;
-  $display->panels['middle'][1] = 'new-cc89a585-860f-4394-8741-5276276ce477';
+  $display->panels['middle'][2] = 'new-cc89a585-860f-4394-8741-5276276ce477';
   $pane = new stdClass();
   $pane->pid = 'new-6b1d0c10-33e9-40ed-8eb3-21cd89c9db4b';
   $pane->panel = 'middle';
@@ -180,13 +232,45 @@ function campsite_sponsor_default_page_manager_pages() {
   $pane->style = array(
     'settings' => NULL,
   );
-  $pane->css = array();
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'silver',
+  );
   $pane->extras = array();
-  $pane->position = 2;
+  $pane->position = 3;
   $pane->locks = array();
   $pane->uuid = '6b1d0c10-33e9-40ed-8eb3-21cd89c9db4b';
   $display->content['new-6b1d0c10-33e9-40ed-8eb3-21cd89c9db4b'] = $pane;
-  $display->panels['middle'][2] = 'new-6b1d0c10-33e9-40ed-8eb3-21cd89c9db4b';
+  $display->panels['middle'][3] = 'new-6b1d0c10-33e9-40ed-8eb3-21cd89c9db4b';
+  $pane = new stdClass();
+  $pane->pid = 'new-78418a1c-385a-41e1-8b6d-853509123629';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsor-sponsor_argument_display';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => array(
+      0 => 'context_entity:taxonomy_term_10',
+    ),
+    'override_title' => 0,
+    'override_title_text' => '',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'bronze',
+  );
+  $pane->extras = array();
+  $pane->position = 4;
+  $pane->locks = array();
+  $pane->uuid = '78418a1c-385a-41e1-8b6d-853509123629';
+  $display->content['new-78418a1c-385a-41e1-8b6d-853509123629'] = $pane;
+  $display->panels['middle'][4] = 'new-78418a1c-385a-41e1-8b6d-853509123629';
   $pane = new stdClass();
   $pane->pid = 'new-32e58abf-708e-4917-bdb6-bb8c7b3a0098';
   $pane->panel = 'middle';
@@ -205,11 +289,11 @@ function campsite_sponsor_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 3;
+  $pane->position = 5;
   $pane->locks = array();
   $pane->uuid = '32e58abf-708e-4917-bdb6-bb8c7b3a0098';
   $display->content['new-32e58abf-708e-4917-bdb6-bb8c7b3a0098'] = $pane;
-  $display->panels['middle'][3] = 'new-32e58abf-708e-4917-bdb6-bb8c7b3a0098';
+  $display->panels['middle'][5] = 'new-32e58abf-708e-4917-bdb6-bb8c7b3a0098';
   $pane = new stdClass();
   $pane->pid = 'new-daba1d04-9d75-4f24-9042-b1c74ce9e359';
   $pane->panel = 'middle';
@@ -228,11 +312,11 @@ function campsite_sponsor_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 4;
+  $pane->position = 6;
   $pane->locks = array();
   $pane->uuid = 'daba1d04-9d75-4f24-9042-b1c74ce9e359';
   $display->content['new-daba1d04-9d75-4f24-9042-b1c74ce9e359'] = $pane;
-  $display->panels['middle'][4] = 'new-daba1d04-9d75-4f24-9042-b1c74ce9e359';
+  $display->panels['middle'][6] = 'new-daba1d04-9d75-4f24-9042-b1c74ce9e359';
   $pane = new stdClass();
   $pane->pid = 'new-5293d883-9074-4a05-adc5-7a50a0a83121';
   $pane->panel = 'middle';
@@ -254,11 +338,11 @@ function campsite_sponsor_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 5;
+  $pane->position = 7;
   $pane->locks = array();
   $pane->uuid = '5293d883-9074-4a05-adc5-7a50a0a83121';
   $display->content['new-5293d883-9074-4a05-adc5-7a50a0a83121'] = $pane;
-  $display->panels['middle'][5] = 'new-5293d883-9074-4a05-adc5-7a50a0a83121';
+  $display->panels['middle'][7] = 'new-5293d883-9074-4a05-adc5-7a50a0a83121';
   $pane = new stdClass();
   $pane->pid = 'new-4e884fa6-377d-40f0-8312-46d831e26504';
   $pane->panel = 'middle';
@@ -280,11 +364,11 @@ function campsite_sponsor_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 6;
+  $pane->position = 8;
   $pane->locks = array();
   $pane->uuid = '4e884fa6-377d-40f0-8312-46d831e26504';
   $display->content['new-4e884fa6-377d-40f0-8312-46d831e26504'] = $pane;
-  $display->panels['middle'][6] = 'new-4e884fa6-377d-40f0-8312-46d831e26504';
+  $display->panels['middle'][8] = 'new-4e884fa6-377d-40f0-8312-46d831e26504';
   $pane = new stdClass();
   $pane->pid = 'new-66e71ba4-02ab-418a-93dc-f708bdca7135';
   $pane->panel = 'middle';
@@ -306,11 +390,11 @@ function campsite_sponsor_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 7;
+  $pane->position = 9;
   $pane->locks = array();
   $pane->uuid = '66e71ba4-02ab-418a-93dc-f708bdca7135';
   $display->content['new-66e71ba4-02ab-418a-93dc-f708bdca7135'] = $pane;
-  $display->panels['middle'][7] = 'new-66e71ba4-02ab-418a-93dc-f708bdca7135';
+  $display->panels['middle'][9] = 'new-66e71ba4-02ab-418a-93dc-f708bdca7135';
   $pane = new stdClass();
   $pane->pid = 'new-fd2c5637-509c-40a2-a565-7b7a913f6452';
   $pane->panel = 'middle';
@@ -325,11 +409,11 @@ function campsite_sponsor_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 8;
+  $pane->position = 10;
   $pane->locks = array();
   $pane->uuid = 'fd2c5637-509c-40a2-a565-7b7a913f6452';
   $display->content['new-fd2c5637-509c-40a2-a565-7b7a913f6452'] = $pane;
-  $display->panels['middle'][8] = 'new-fd2c5637-509c-40a2-a565-7b7a913f6452';
+  $display->panels['middle'][10] = 'new-fd2c5637-509c-40a2-a565-7b7a913f6452';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

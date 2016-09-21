@@ -12,40 +12,25 @@ function image_styles_image_default_styles() {
 
   // Exported image style: sponsors_large.
   $styles['sponsors_large'] = array(
-    'name' => 'sponsors_large',
     'label' => 'Sponsors - large',
     'effects' => array(
-      1 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
-        'name' => 'image_scale_and_crop',
+      4 => array(
+        'name' => 'image_scale',
         'data' => array(
-          'width' => 220,
-          'height' => 220,
+          'width' => '',
+          'height' => 200,
+          'upscale' => 0,
         ),
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
 
   // Exported image style: users_attendee.
   $styles['users_attendee'] = array(
-    'name' => 'users_attendee',
     'label' => 'Users - attendee',
     'effects' => array(
       1 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 141,

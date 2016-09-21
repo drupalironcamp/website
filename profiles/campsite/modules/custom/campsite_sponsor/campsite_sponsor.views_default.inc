@@ -22,7 +22,7 @@ function campsite_sponsor_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Platinum';
+  $handler->display->display_options['title'] = 'Sponsors';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -65,7 +65,7 @@ function campsite_sponsor_views_default_views() {
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['relationship'] = 'field_sponsor_category_target_id';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
   /* Filter criterion: Content: Published */
