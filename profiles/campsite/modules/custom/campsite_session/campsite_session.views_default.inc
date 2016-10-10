@@ -40,11 +40,9 @@ function campsite_session_views_default_views() {
     'title' => 'title',
     'field_session_speakers' => 'field_session_speakers',
     'body' => 'body',
-    'field_session_date' => 'field_session_date',
+    'field_session_type' => 'field_session_type',
     'field_session_experience_level' => 'field_session_experience_level',
     'field_session_track' => 'field_session_track',
-    'field_session_type' => 'field_session_type',
-    'ops' => 'ops',
   );
   $handler->display->display_options['style_options']['default'] = 'title';
   $handler->display->display_options['style_options']['info'] = array(
@@ -67,7 +65,7 @@ function campsite_session_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_session_date' => array(
+    'field_session_type' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -75,7 +73,7 @@ function campsite_session_views_default_views() {
       'empty_column' => 0,
     ),
     'field_session_experience_level' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
@@ -84,18 +82,6 @@ function campsite_session_views_default_views() {
     'field_session_track' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_session_type' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'ops' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
