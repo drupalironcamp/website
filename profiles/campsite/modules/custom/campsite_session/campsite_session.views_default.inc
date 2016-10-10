@@ -115,7 +115,6 @@ function campsite_session_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: Speakers */
@@ -280,6 +279,52 @@ function campsite_session_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Speakers */
+  $handler->display->display_options['fields']['field_session_speakers']['id'] = 'field_session_speakers';
+  $handler->display->display_options['fields']['field_session_speakers']['table'] = 'field_data_field_session_speakers';
+  $handler->display->display_options['fields']['field_session_speakers']['field'] = 'field_session_speakers';
+  $handler->display->display_options['fields']['field_session_speakers']['label'] = 'Speaker(s)';
+  $handler->display->display_options['fields']['field_session_speakers']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_session_speakers']['delta_offset'] = '0';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = 'Abstract';
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '200',
+  );
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['field_session_type']['id'] = 'field_session_type';
+  $handler->display->display_options['fields']['field_session_type']['table'] = 'field_data_field_session_type';
+  $handler->display->display_options['fields']['field_session_type']['field'] = 'field_session_type';
+  $handler->display->display_options['fields']['field_session_type']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: Content: Experience level */
+  $handler->display->display_options['fields']['field_session_experience_level']['id'] = 'field_session_experience_level';
+  $handler->display->display_options['fields']['field_session_experience_level']['table'] = 'field_data_field_session_experience_level';
+  $handler->display->display_options['fields']['field_session_experience_level']['field'] = 'field_session_experience_level';
+  $handler->display->display_options['fields']['field_session_experience_level']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: Content: Track */
+  $handler->display->display_options['fields']['field_session_track']['id'] = 'field_session_track';
+  $handler->display->display_options['fields']['field_session_track']['table'] = 'field_data_field_session_track';
+  $handler->display->display_options['fields']['field_session_track']['field'] = 'field_session_track';
+  $handler->display->display_options['fields']['field_session_track']['settings'] = array(
+    'link' => 1,
+  );
   $handler->display->display_options['path'] = 'program/sessions';
 
   /* Display: Admin */
