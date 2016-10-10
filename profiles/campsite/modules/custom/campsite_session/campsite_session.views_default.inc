@@ -289,7 +289,7 @@ function campsite_session_views_default_views() {
   $handler->display->display_options['fields']['field_session_type']['table'] = 'field_data_field_session_type';
   $handler->display->display_options['fields']['field_session_type']['field'] = 'field_session_type';
   $handler->display->display_options['fields']['field_session_type']['settings'] = array(
-    'link' => 1,
+    'link' => 0,
   );
   /* Field: Content: Experience level */
   $handler->display->display_options['fields']['field_session_experience_level']['id'] = 'field_session_experience_level';
