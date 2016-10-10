@@ -87,12 +87,6 @@ function campsite_session_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Relationship: Flags: vote_for_session */
-  $handler->display->display_options['relationships']['flag_content_rel']['id'] = 'flag_content_rel';
-  $handler->display->display_options['relationships']['flag_content_rel']['table'] = 'node';
-  $handler->display->display_options['relationships']['flag_content_rel']['field'] = 'flag_content_rel';
-  $handler->display->display_options['relationships']['flag_content_rel']['required'] = 0;
-  $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'vote_for_session';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_session_speakers_target_id']['id'] = 'field_session_speakers_target_id';
   $handler->display->display_options['relationships']['field_session_speakers_target_id']['table'] = 'field_data_field_session_speakers';
@@ -278,7 +272,7 @@ function campsite_session_views_default_views() {
   $handler->display->display_options['fields']['field_session_speakers']['field'] = 'field_session_speakers';
   $handler->display->display_options['fields']['field_session_speakers']['label'] = 'Speaker(s)';
   $handler->display->display_options['fields']['field_session_speakers']['settings'] = array(
-    'link' => 0,
+    'link' => 1,
   );
   $handler->display->display_options['fields']['field_session_speakers']['delta_offset'] = '0';
   /* Field: Content: Body */
