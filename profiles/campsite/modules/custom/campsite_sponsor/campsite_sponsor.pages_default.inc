@@ -113,6 +113,13 @@ function campsite_sponsor_default_page_manager_pages() {
         'entity_id' => '24',
         'id' => 10,
       ),
+      10 => array(
+        'identifier' => 'Supporting partners',
+        'keyword' => 'taxonomy_term',
+        'name' => 'entity:taxonomy_term',
+        'entity_id' => '80',
+        'id' => 11,
+      ),
     ),
     'relationships' => array(),
   );
@@ -396,6 +403,35 @@ function campsite_sponsor_default_page_manager_pages() {
   $display->content['new-66e71ba4-02ab-418a-93dc-f708bdca7135'] = $pane;
   $display->panels['middle'][9] = 'new-66e71ba4-02ab-418a-93dc-f708bdca7135';
   $pane = new stdClass();
+  $pane->pid = 'new-0524090f-5f68-46bc-b22c-9fda498a34de';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'sponsor-sponsor_argument_display';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'context' => array(
+      0 => 'context_entity:taxonomy_term_11',
+    ),
+    'override_title' => 1,
+    'override_title_text' => 'Supporting Partner',
+    'override_title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array(
+    'css_id' => '',
+    'css_class' => 'gold',
+  );
+  $pane->extras = array();
+  $pane->position = 10;
+  $pane->locks = array();
+  $pane->uuid = '0524090f-5f68-46bc-b22c-9fda498a34de';
+  $display->content['new-0524090f-5f68-46bc-b22c-9fda498a34de'] = $pane;
+  $display->panels['middle'][10] = 'new-0524090f-5f68-46bc-b22c-9fda498a34de';
+  $pane = new stdClass();
   $pane->pid = 'new-fd2c5637-509c-40a2-a565-7b7a913f6452';
   $pane->panel = 'middle';
   $pane->type = 'views_panes';
@@ -409,11 +445,11 @@ function campsite_sponsor_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 10;
+  $pane->position = 11;
   $pane->locks = array();
   $pane->uuid = 'fd2c5637-509c-40a2-a565-7b7a913f6452';
   $display->content['new-fd2c5637-509c-40a2-a565-7b7a913f6452'] = $pane;
-  $display->panels['middle'][10] = 'new-fd2c5637-509c-40a2-a565-7b7a913f6452';
+  $display->panels['middle'][11] = 'new-fd2c5637-509c-40a2-a565-7b7a913f6452';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
