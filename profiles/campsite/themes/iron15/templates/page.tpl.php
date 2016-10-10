@@ -280,7 +280,7 @@
               )
             )
           )) .
-          $propose_session_link .
+//          $propose_session_link .
           l(t('<span>Become our</span>Sponsor'), 'become-a-sponsor', array(
             'html' => TRUE,
             'attributes' => array(
