@@ -1,7 +1,7 @@
 name = Campsite - pages
 core = 7.x
 package = CampSite
-version = 7.x-1.1
+version = 7.x-1.2
 project = campsite_pages
 dependencies[] = context
 dependencies[] = ctools
@@ -9,6 +9,7 @@ dependencies[] = fe_block
 dependencies[] = menu_block
 dependencies[] = page_manager
 dependencies[] = strongarm
+features[context][] = sessions-twitter
 features[context][] = sitewide
 features[ctools][] = context:context:3
 features[ctools][] = page_manager:pages_default:1
