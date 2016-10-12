@@ -13,6 +13,38 @@ function campsite_pages_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'sessions-twitter';
+  $context->description = 'add twitter on sessions page';
+  $context->tag = '';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'program/sessions' => 'program/sessions',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'block-3' => array(
+          'module' => 'block',
+          'delta' => '3',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('add twitter on sessions page');
+  $export['sessions-twitter'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'sitewide';
   $context->description = '';
   $context->tag = '';
@@ -22,6 +54,7 @@ function campsite_pages_context_default_contexts() {
         '/' => '/',
         '/*' => '/*',
         '*' => '*',
+        '~program/sessions' => '~program/sessions',
       ),
     ),
   );
