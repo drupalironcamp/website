@@ -110,7 +110,7 @@ function campsite_sponsor_default_page_manager_pages() {
         'identifier' => 'Bronze',
         'keyword' => 'Bronze',
         'name' => 'entity:taxonomy_term',
-        'entity_id' => '24',
+        'entity_id' => '37',
         'id' => 10,
       ),
       10 => array(
