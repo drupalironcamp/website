@@ -34,6 +34,12 @@ function campsite_session_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -51,7 +57,7 @@ function campsite_session_strongarm() {
         'flag_vote_for_session' => array(
           'default' => array(
             'weight' => '10',
-            'visible' => TRUE,
+            'visible' => FALSE,
           ),
         ),
       ),
