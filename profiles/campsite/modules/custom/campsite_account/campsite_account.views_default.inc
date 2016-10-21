@@ -88,6 +88,11 @@ function campsite_account_views_default_views() {
   $handler->display->display_options['row_options']['view_mode'] = 'attendee';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: User: Last name */
+  $handler->display->display_options['fields']['field_user_last_name']['id'] = 'field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['table'] = 'field_data_field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['field'] = 'field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['exclude'] = TRUE;
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
@@ -98,11 +103,6 @@ function campsite_account_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
-  /* Field: User: Last name */
-  $handler->display->display_options['fields']['field_user_last_name']['id'] = 'field_user_last_name';
-  $handler->display->display_options['fields']['field_user_last_name']['table'] = 'field_data_field_user_last_name';
-  $handler->display->display_options['fields']['field_user_last_name']['field'] = 'field_user_last_name';
-  $handler->display->display_options['fields']['field_user_last_name']['exclude'] = TRUE;
   /* Field: User: Uid */
   $handler->display->display_options['fields']['uid']['id'] = 'uid';
   $handler->display->display_options['fields']['uid']['table'] = 'users';
@@ -156,6 +156,13 @@ function campsite_account_views_default_views() {
   $handler->display->display_options['filters']['combine']['fields'] = array(
     'name' => 'name',
     'field_user_last_name' => 'field_user_last_name',
+  );
+  /* Filter criterion: User: Roles */
+  $handler->display->display_options['filters']['rid']['id'] = 'rid';
+  $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
+  $handler->display->display_options['filters']['rid']['field'] = 'rid';
+  $handler->display->display_options['filters']['rid']['value'] = array(
+    3 => '3',
   );
 
   /* Display: Individual sponsors */

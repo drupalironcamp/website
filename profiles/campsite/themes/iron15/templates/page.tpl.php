@@ -302,6 +302,11 @@
     class="main-container <?php if (!$is_front) : print ('container'); endif; ?>">
 
     <div class="row">
+      <?php if (!empty($schedule_submenu)): ?>
+        <section class="submenu col-sm-10 col-sm-offset-1">
+          <?php print $schedule_submenu; ?>
+        </section>
+      <?php endif; ?>
 
       <section<?php if (!$is_front) : print $content_column_class; endif; ?>>
         <?php if (!empty($breadcrumb)): print $breadcrumb; endif; ?>

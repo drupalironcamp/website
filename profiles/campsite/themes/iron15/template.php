@@ -67,6 +67,25 @@ function iron15_preprocess_page(&$variables) {
     $variables['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
   }
 
+  $variables['schedule_submenu'] = array();
+
+  // Schedule menu
+  if (isset($variables['node']) && $variables['node']->type === 'schedule') {
+    $menu = menu_navigation_links('menu-schedule');
+    foreach ($menu as &$item) {
+      $item['attributes']['class'][] = 'btn';
+      $item['attributes']['class'][] = 'btn-primary';
+      $item['attributes']['class'][] = 'btn-lg';
+    }
+    $variables['schedule_submenu'] = theme('links', array(
+      'links' => $menu,
+      'attributes' => array(
+        'id' => 'schedule-menu',
+        'class' => array('links', 'clearfix'),
+      ),
+    ));
+  }
+
   $variables['navbar_classes_array'] = array('navbar');
 
   if (theme_get_setting('bootstrap_navbar_position') !== '') {
