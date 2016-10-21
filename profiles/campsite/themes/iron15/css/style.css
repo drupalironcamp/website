@@ -2362,14 +2362,6 @@ textarea#user-register-form #field_user_country-und-0-iso-wrapper select {
   color: #ffffff;
   text-decoration: none;
 }
-.btn:active,
-.btn.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
 .btn.disabled,
 .btn[disabled],
 fieldset[disabled] .btn {
@@ -2709,6 +2701,11 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ff841c;
   border-color: #ff841c;
   color: white;
+}
+.btn-primary.active {
+  color: #cb085e;
+  background-color: white;
+  border-color: #cb085e;
 }
 .btn-link {
   color: #cb085e;
@@ -7095,14 +7092,6 @@ button.close {
   color: #ffffff;
   text-decoration: none;
 }
-.pane-signup input.button:active,
-.pane-signup input.button.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
 .pane-signup input.button.disabled,
 .pane-signup input.button[disabled],
 fieldset[disabled] .pane-signup input.button {
@@ -8001,6 +7990,18 @@ fieldset[disabled] .pane-signup input.button.active {
 .page-program-sessions table td p {
   font-size: 16px;
   line-height: 22px;
+}
+.node-type-schedule .submenu {
+  margin-top: 70px;
+}
+.node-type-schedule .submenu #schedule-menu li {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style-type: none;
+}
+.node-type-schedule .submenu #schedule-menu li a:not(.active) {
+  color: white;
 }
 .node-type-schedule h3 {
   font-size: 24px;
