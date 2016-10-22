@@ -127,3 +127,14 @@ function iron15_preprocess_page(&$variables) {
     ));
   }
 }
+
+function iron15_preprocess_node(array &$vars) {
+  if ($vars['type'] === 'session' && $vars['view_mode'] === 'keynote') {
+    foreach ($vars['field_session_speakers'] as $speaker) {
+      $user_object = entity_metadata_wrapper('user',$speaker['entity']);
+      $name_surname = $user_object->field_user_first_name->value() . ' ' . $user_object->field_user_last_name->value();
+      $link = l($name_surname, 'user/'.$user_object->uid->raw());
+      $vars['speakers'][] = $link;
+    }
+  }
+}

@@ -67,6 +67,10 @@ function campsite_session_strongarm() {
             'weight' => '3',
             'visible' => FALSE,
           ),
+          'keynote' => array(
+            'weight' => '1',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),

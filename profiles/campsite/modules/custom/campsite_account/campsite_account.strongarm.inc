@@ -52,6 +52,10 @@ function campsite_account_strongarm() {
             'weight' => '5',
             'visible' => FALSE,
           ),
+          'keynote' => array(
+            'weight' => '4',
+            'visible' => FALSE,
+          ),
         ),
         'flag_featured_attendees' => array(
           'full' => array(
@@ -61,6 +65,10 @@ function campsite_account_strongarm() {
           'default' => array(
             'weight' => '16',
             'visible' => TRUE,
+          ),
+          'keynote' => array(
+            'weight' => '1',
+            'visible' => FALSE,
           ),
         ),
         'flag_volunteer' => array(
@@ -72,6 +80,10 @@ function campsite_account_strongarm() {
             'weight' => '10',
             'visible' => TRUE,
           ),
+          'keynote' => array(
+            'weight' => '2',
+            'visible' => FALSE,
+          ),
         ),
         'flag_individual_sponsor' => array(
           'default' => array(
@@ -81,6 +93,10 @@ function campsite_account_strongarm() {
           'full' => array(
             'weight' => '12',
             'visible' => TRUE,
+          ),
+          'keynote' => array(
+            'weight' => '3',
+            'visible' => FALSE,
           ),
         ),
       ),

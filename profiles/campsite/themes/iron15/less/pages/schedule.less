@@ -46,3 +46,40 @@
     }
   }
 }
+
+/** Keynotes block on homepage **/
+.pane-nodequeue-1 {
+  .pane-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.view-nodequeue-1 {
+  padding-bottom: 50px;
+  .views-row {
+    margin-bottom: 15px;
+    article.node-session {
+      padding-right: 15px;
+      border-radius: 80px;
+      border: 3px solid white;
+      .field-name-field-session-speakers {
+        float: left;
+        margin-right: 20px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      margin-right: 20px;
+      &.views-row-even {
+        margin-right: 0;
+      }
+      .speakers a {
+        color: @gray-dark;
+        &:hover {
+          color: @gray-darker;
+        }
+      }
+    }
+  }
+}
