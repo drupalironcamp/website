@@ -94,5 +94,7 @@
     <?php endif; ?>
     <?php print render($title_suffix); ?>
   <?php endif; ?>
-
+  <div class="speakers">
+    <?php print implode(',', $speakers); ?>
+  </div>
 </article>

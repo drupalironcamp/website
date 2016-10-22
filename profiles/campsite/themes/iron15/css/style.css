@@ -8060,6 +8060,12 @@ fieldset[disabled] .pane-signup input.button.active {
 .view-nodequeue-1 .views-row article.node-session.views-row-even {
   margin-right: 0;
 }
+.view-nodequeue-1 .views-row article.node-session .speakers a {
+  color: #333333;
+}
+.view-nodequeue-1 .views-row article.node-session .speakers a:hover {
+  color: #222222;
+}
 *:focus {
   outline: 0;
 }
