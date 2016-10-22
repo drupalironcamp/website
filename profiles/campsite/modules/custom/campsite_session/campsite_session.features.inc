@@ -21,6 +21,39 @@ function campsite_session_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_fe_nodequeue_export_fields().
+ */
+function campsite_session_fe_nodequeue_export_fields() {
+  $nodequeues = array();
+
+  // Exported nodequeues: keynotes
+  $nodequeues['keynotes'] = array(
+    'name' => 'keynotes',
+    'title' => 'Keynotes',
+    'subqueue_title' => '',
+    'size' => 0,
+    'link' => '',
+    'link_remove' => '',
+    'owner' => 'nodequeue',
+    'show_in_ui' => 1,
+    'show_in_tab' => 1,
+    'show_in_links' => 0,
+    'reference' => 0,
+    'reverse' => 0,
+    'insert_at_front' => 0,
+    'i18n' => 0,
+    'subqueues' => 1,
+    'types' => array(
+      0 => 'session',
+    ),
+    'roles' => array(),
+    'count' => 0,
+  );
+
+  return $nodequeues;
+}
+
+/**
  * Implements hook_flag_default_flags().
  */
 function campsite_session_flag_default_flags() {

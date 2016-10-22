@@ -8033,6 +8033,33 @@ fieldset[disabled] .pane-signup input.button.active {
 .node-type-schedule article.node-session .field-name-field-session-speakers .field-item {
   float: left;
 }
+/** Keynotes block on homepage **/
+.pane-nodequeue-1 .pane-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.view-nodequeue-1 {
+  padding-bottom: 50px;
+}
+.view-nodequeue-1 .views-row {
+  margin-bottom: 15px;
+}
+.view-nodequeue-1 .views-row article.node-session {
+  padding-right: 15px;
+  border-radius: 80px;
+  border: 3px solid white;
+  margin-right: 20px;
+}
+.view-nodequeue-1 .views-row article.node-session .field-name-field-session-speakers {
+  float: left;
+  margin-right: 20px;
+}
+.view-nodequeue-1 .views-row article.node-session .field-name-field-session-speakers img {
+  border-radius: 50%;
+}
+.view-nodequeue-1 .views-row article.node-session.views-row-even {
+  margin-right: 0;
+}
 *:focus {
   outline: 0;
 }
