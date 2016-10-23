@@ -7767,34 +7767,34 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .page-community-attendees .pane-content,
 .page-community-volunteers .pane-content,
-.page-sponsors .pane-content {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content {
   margin-left: -15px;
   margin-right: -15px;
 }
 .page-community-attendees .pane-content:hover .user-attendee,
 .page-community-volunteers .pane-content:hover .user-attendee,
-.page-sponsors .pane-content:hover .user-attendee {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content:hover .user-attendee {
   opacity: 0.5;
 }
 .page-community-attendees .pane-content .user-attendee,
 .page-community-volunteers .pane-content .user-attendee,
-.page-sponsors .pane-content .user-attendee {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .user-attendee {
   transition: all 0.2s ease-in-out;
 }
 .page-community-attendees .pane-content .user-attendee:hover,
 .page-community-volunteers .pane-content .user-attendee:hover,
-.page-sponsors .pane-content .user-attendee:hover {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .user-attendee:hover {
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 .page-community-attendees .pane-content .field-type-text .field-label,
 .page-community-volunteers .pane-content .field-type-text .field-label,
-.page-sponsors .pane-content .field-type-text .field-label {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .field-type-text .field-label {
   display: none;
 }
 .page-community-attendees .pane-content .views-row,
 .page-community-volunteers .pane-content .views-row,
-.page-sponsors .pane-content .views-row {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row {
   margin-bottom: 20px;
   overflow: hidden;
   float: left;
@@ -7808,7 +7808,7 @@ fieldset[disabled] .pane-signup input.button.active {
 @media (min-width: 768px) {
   .page-community-attendees .pane-content .views-row,
   .page-community-volunteers .pane-content .views-row,
-  .page-sponsors .pane-content .views-row {
+  .page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row {
     float: left;
     width: 33.33333333%;
   }
@@ -7816,43 +7816,43 @@ fieldset[disabled] .pane-signup input.button.active {
 @media (min-width: 992px) {
   .page-community-attendees .pane-content .views-row,
   .page-community-volunteers .pane-content .views-row,
-  .page-sponsors .pane-content .views-row {
+  .page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row {
     float: left;
     width: 25%;
   }
 }
 .page-community-attendees .pane-content .views-row:nth-child(2n+3),
 .page-community-volunteers .pane-content .views-row:nth-child(2n+3),
-.page-sponsors .pane-content .views-row:nth-child(2n+3) {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row:nth-child(2n+3) {
   clear: left;
 }
 @media (min-width: 768px) {
   .page-community-attendees .pane-content .views-row:nth-child(2n+3),
   .page-community-volunteers .pane-content .views-row:nth-child(2n+3),
-  .page-sponsors .pane-content .views-row:nth-child(2n+3) {
+  .page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row:nth-child(2n+3) {
     clear: none;
   }
   .page-community-attendees .pane-content .views-row:nth-child(3n+4),
   .page-community-volunteers .pane-content .views-row:nth-child(3n+4),
-  .page-sponsors .pane-content .views-row:nth-child(3n+4) {
+  .page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row:nth-child(3n+4) {
     clear: left;
   }
 }
 @media (min-width: 992px) {
   .page-community-attendees .pane-content .views-row:nth-child(3n+4),
   .page-community-volunteers .pane-content .views-row:nth-child(3n+4),
-  .page-sponsors .pane-content .views-row:nth-child(3n+4) {
+  .page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row:nth-child(3n+4) {
     clear: none;
   }
   .page-community-attendees .pane-content .views-row:nth-child(4n+5),
   .page-community-volunteers .pane-content .views-row:nth-child(4n+5),
-  .page-sponsors .pane-content .views-row:nth-child(4n+5) {
+  .page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row:nth-child(4n+5) {
     clear: left;
   }
 }
 .page-community-attendees .pane-content .views-row .field-name-field-user-picture,
 .page-community-volunteers .pane-content .views-row .field-name-field-user-picture,
-.page-sponsors .pane-content .views-row .field-name-field-user-picture {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row .field-name-field-user-picture {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -7863,14 +7863,14 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .page-community-attendees .pane-content .views-row .field-name-field-user-picture img,
 .page-community-volunteers .pane-content .views-row .field-name-field-user-picture img,
-.page-sponsors .pane-content .views-row .field-name-field-user-picture img {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row .field-name-field-user-picture img {
   display: block;
   width: 100%;
   height: auto;
 }
 .page-community-attendees .pane-content .views-row .svg-drupal,
 .page-community-volunteers .pane-content .views-row .svg-drupal,
-.page-sponsors .pane-content .views-row .svg-drupal {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row .svg-drupal {
   height: 60px;
   background-position: 52%;
   background-repeat: no-repeat;
@@ -7879,17 +7879,17 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .page-community-attendees .pane-content .views-row .field-name-field-user-job-title,
 .page-community-volunteers .pane-content .views-row .field-name-field-user-job-title,
-.page-sponsors .pane-content .views-row .field-name-field-user-job-title {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row .field-name-field-user-job-title {
   float: none;
   text-align: center;
   color: #cb085e;
 }
 .page-community-attendees .pane-content .views-row .field-name-field-user-first-name,
 .page-community-volunteers .pane-content .views-row .field-name-field-user-first-name,
-.page-sponsors .pane-content .views-row .field-name-field-user-first-name,
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row .field-name-field-user-first-name,
 .page-community-attendees .pane-content .views-row .field-name-field-user-last-name,
 .page-community-volunteers .pane-content .views-row .field-name-field-user-last-name,
-.page-sponsors .pane-content .views-row .field-name-field-user-last-name {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row .field-name-field-user-last-name {
   color: #cb085e;
   display: inline-block;
   font-weight: 600;
@@ -7898,14 +7898,14 @@ fieldset[disabled] .pane-signup input.button.active {
 }
 .page-community-attendees .pane-content .views-row .field-name-field-user-organization,
 .page-community-volunteers .pane-content .views-row .field-name-field-user-organization,
-.page-sponsors .pane-content .views-row .field-name-field-user-organization {
+.page-sponsors .pane-user-list-individual-sponsor .pane-content .views-row .field-name-field-user-organization {
   color: #777777;
   font-size: 14px;
 }
 @media screen and (min-width: 768px) {
   .page-community-attendees .pane-content .view-content + .text-center,
   .page-community-volunteers .pane-content .view-content + .text-center,
-  .page-sponsors .pane-content .view-content + .text-center {
+  .page-sponsors .pane-user-list-individual-sponsor .pane-content .view-content + .text-center {
     width: 100%;
     float: left;
   }
