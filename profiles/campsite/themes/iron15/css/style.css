@@ -7110,6 +7110,47 @@ fieldset[disabled] .pane-signup input.button.active {
     margin-left: 16px;
   }
 }
+.node-type-session .region-content {
+  margin-bottom: 3em;
+}
+.node-type-session .group-header {
+  background: #cb085e;
+  color: #FFFFFF;
+  margin-bottom: 3em;
+  padding: 1em 1.5em 0.8em;
+}
+.node-type-session .group-header .field-name-field-session-track,
+.node-type-session .group-header .field-name-field-session-experience-level {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding-right: 0.5em;
+}
+.node-type-session .group-header .field-name-field-session-track .field-label,
+.node-type-session .group-header .field-name-field-session-experience-level .field-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+.node-type-session .group-header .field-name-field-session-track {
+  border-right: 1px solid #FFFFFF;
+}
+.node-type-session .group-left {
+  text-align: center;
+  width: 30%;
+}
+.node-type-session .group-left .group-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1em;
+}
+.node-type-session .group-left .group-name div {
+  display: inline-block;
+  margin-right: 3px;
+}
+.node-type-session .group-left img {
+  width: 100%;
+}
+.node-type-session .group-right {
+  width: 70%;
+}
 #page-header {
   position: relative;
   background-color: #d8d8d8;

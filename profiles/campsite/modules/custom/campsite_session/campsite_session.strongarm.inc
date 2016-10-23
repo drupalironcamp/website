@@ -23,7 +23,7 @@ function campsite_session_strongarm() {
         'custom_settings' => TRUE,
       ),
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
@@ -39,6 +39,9 @@ function campsite_session_strongarm() {
       ),
       'token' => array(
         'custom_settings' => FALSE,
+      ),
+      'keynote' => array(
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(
@@ -69,6 +72,10 @@ function campsite_session_strongarm() {
           ),
           'keynote' => array(
             'weight' => '1',
+            'visible' => FALSE,
+          ),
+          'full' => array(
+            'weight' => '16',
             'visible' => FALSE,
           ),
         ),
