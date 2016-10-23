@@ -6709,6 +6709,18 @@ button.close {
     width: 20%;
   }
 }
+.front .view-display-id-sponsor_argument_display .view-content .item-list {
+  width: 100%;
+}
+.front .view-display-id-sponsor_argument_display .view-content .item-list ul li {
+  float: left;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .front .view-display-id-sponsor_argument_display .view-content .item-list ul li {
+    width: 33%;
+  }
+}
 .page-sponsors .panel-display h2.pane-title {
   border-bottom: 1px solid #cb085e;
   margin-bottom: 2em;
