@@ -14,7 +14,8 @@ function campsite_session_user_default_permissions() {
   $permissions['create session content'] = array(
     'name' => 'create session content',
     'roles' => array(
-      'authenticated user' => 'authenticated user',
+      'Editor' => 'Editor',
+      'Manager' => 'Manager',
     ),
     'module' => 'node',
   );
@@ -22,7 +23,10 @@ function campsite_session_user_default_permissions() {
   // Exported permission: 'delete any session content'.
   $permissions['delete any session content'] = array(
     'name' => 'delete any session content',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Manager' => 'Manager',
+    ),
     'module' => 'node',
   );
 
@@ -30,7 +34,8 @@ function campsite_session_user_default_permissions() {
   $permissions['delete own session content'] = array(
     'name' => 'delete own session content',
     'roles' => array(
-      'authenticated user' => 'authenticated user',
+      'Editor' => 'Editor',
+      'Manager' => 'Manager',
     ),
     'module' => 'node',
   );
@@ -38,7 +43,10 @@ function campsite_session_user_default_permissions() {
   // Exported permission: 'edit any session content'.
   $permissions['edit any session content'] = array(
     'name' => 'edit any session content',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+      'Manager' => 'Manager',
+    ),
     'module' => 'node',
   );
 
@@ -46,7 +54,8 @@ function campsite_session_user_default_permissions() {
   $permissions['edit own session content'] = array(
     'name' => 'edit own session content',
     'roles' => array(
-      'authenticated user' => 'authenticated user',
+      'Editor' => 'Editor',
+      'Manager' => 'Manager',
     ),
     'module' => 'node',
   );

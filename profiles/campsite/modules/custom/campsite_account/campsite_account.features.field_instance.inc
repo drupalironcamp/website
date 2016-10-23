@@ -37,6 +37,12 @@ function campsite_account_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
       'list' => array(
         'label' => 'above',
         'settings' => array(),
@@ -90,6 +96,12 @@ function campsite_account_field_default_field_instances() {
         'type' => 'country_default',
         'weight' => 0,
       ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
       'list' => array(
         'label' => 'above',
         'settings' => array(),
@@ -139,6 +151,12 @@ function campsite_account_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 14,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
       ),
       'list' => array(
         'label' => 'above',
@@ -193,6 +211,12 @@ function campsite_account_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
       'list' => array(
         'label' => 'above',
         'settings' => array(),
@@ -245,6 +269,12 @@ function campsite_account_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 15,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
       ),
       'list' => array(
         'label' => 'above',
@@ -299,6 +329,12 @@ function campsite_account_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
       ),
       'list' => array(
         'label' => 'above',
@@ -361,6 +397,16 @@ function campsite_account_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 3,
+      ),
+      'keynote' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => 'users_attendee',
+        ),
+        'type' => 'image',
+        'weight' => 0,
       ),
       'list' => array(
         'label' => 'above',
@@ -426,6 +472,12 @@ function campsite_account_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 8,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -495,6 +547,12 @@ function campsite_account_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
+        'weight' => 5,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'list' => array(
@@ -567,6 +625,12 @@ function campsite_account_field_default_field_instances() {
         'type' => 'link_default',
         'weight' => 7,
       ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
       'list' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -636,6 +700,12 @@ function campsite_account_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 6,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'list' => array(
         'label' => 'hidden',

@@ -1,7 +1,7 @@
 name = CampSite - Account
 core = 7.x
 package = CampSite
-version = 7.x-1.7
+version = 7.x-1.9
 project = campsite_account
 dependencies[] = countries
 dependencies[] = ctools

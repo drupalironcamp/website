@@ -30,6 +30,12 @@ function campsite_codesprint_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'module' => 'text',
@@ -86,6 +92,12 @@ function campsite_codesprint_field_default_field_instances() {
         ),
         'type' => 'date_default',
         'weight' => 2,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -155,6 +167,12 @@ function campsite_codesprint_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 1,
       ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -205,6 +223,12 @@ function campsite_codesprint_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 0,
       ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -253,6 +277,12 @@ function campsite_codesprint_field_default_field_instances() {
         'settings' => array(),
         'type' => 'file_default',
         'weight' => 5,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -308,6 +338,12 @@ function campsite_codesprint_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 3,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',

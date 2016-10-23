@@ -67,6 +67,25 @@ function iron15_preprocess_page(&$variables) {
     $variables['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
   }
 
+  $variables['schedule_submenu'] = array();
+
+  // Schedule menu
+  if (isset($variables['node']) && $variables['node']->type === 'schedule') {
+    $menu = menu_navigation_links('menu-schedule');
+    foreach ($menu as &$item) {
+      $item['attributes']['class'][] = 'btn';
+      $item['attributes']['class'][] = 'btn-primary';
+      $item['attributes']['class'][] = 'btn-lg';
+    }
+    $variables['schedule_submenu'] = theme('links', array(
+      'links' => $menu,
+      'attributes' => array(
+        'id' => 'schedule-menu',
+        'class' => array('links', 'clearfix'),
+      ),
+    ));
+  }
+
   $variables['navbar_classes_array'] = array('navbar');
 
   if (theme_get_setting('bootstrap_navbar_position') !== '') {
@@ -106,5 +125,16 @@ function iron15_preprocess_page(&$variables) {
         )
       )
     ));
+  }
+}
+
+function iron15_preprocess_node(array &$vars) {
+  if ($vars['type'] === 'session' && $vars['view_mode'] === 'keynote') {
+    foreach ($vars['field_session_speakers'] as $speaker) {
+      $user_object = entity_metadata_wrapper('user',$speaker['entity']);
+      $name_surname = $user_object->field_user_first_name->value() . ' ' . $user_object->field_user_last_name->value();
+      $link = l($name_surname, 'user/'.$user_object->uid->raw());
+      $vars['speakers'][] = $link;
+    }
   }
 }

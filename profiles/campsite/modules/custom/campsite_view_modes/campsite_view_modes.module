@@ -12,6 +12,14 @@ function campsite_view_modes_entity_info_alter(&$entity_info) {
     'label' => t('Another teaser'),
     'custom settings' => TRUE,
   );
+  $entity_info['node']['view modes']['keynote'] = array(
+    'label' => t('Keynote'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['user']['view modes']['keynote'] = array(
+    'label' => t('Keynote'),
+    'custom settings' => TRUE,
+  );
 }
 
 function campsite_view_modes_preprocess_node(&$vars) {
@@ -20,5 +28,8 @@ function campsite_view_modes_preprocess_node(&$vars) {
   }
   if($vars['view_mode'] == 'teaser') {
     $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__teaser';
+  }
+  if($vars['view_mode'] == 'keynote') {
+    $vars['theme_hook_suggestions'][] = 'node__' . $vars['type'] . '__keynote';
   }
 }

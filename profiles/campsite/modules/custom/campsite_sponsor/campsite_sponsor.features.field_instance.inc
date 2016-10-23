@@ -30,6 +30,12 @@ function campsite_sponsor_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'list' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -91,6 +97,12 @@ function campsite_sponsor_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 1,
       ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'list' => array(
         'label' => 'above',
         'settings' => array(),
@@ -150,6 +162,12 @@ function campsite_sponsor_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 3,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'list' => array(
         'label' => 'hidden',
@@ -229,6 +247,12 @@ function campsite_sponsor_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 2,
+      ),
+      'keynote' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'list' => array(
         'label' => 'hidden',
