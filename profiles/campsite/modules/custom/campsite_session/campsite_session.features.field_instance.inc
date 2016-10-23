@@ -30,6 +30,13 @@ function campsite_session_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 7,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
       'keynote' => array(
         'label' => 'above',
         'settings' => array(),
@@ -84,6 +91,12 @@ function campsite_session_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 5,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
       ),
       'keynote' => array(
         'label' => 'above',
@@ -155,6 +168,15 @@ function campsite_session_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 1,
       ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 2,
+      ),
       'keynote' => array(
         'label' => 'above',
         'settings' => array(),
@@ -206,6 +228,12 @@ function campsite_session_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 8,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'keynote' => array(
         'label' => 'above',
@@ -316,6 +344,12 @@ function campsite_session_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 4,
       ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
       'keynote' => array(
         'label' => 'above',
         'settings' => array(),
@@ -388,6 +422,16 @@ function campsite_session_field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 0,
       ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'attendee',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 4,
+      ),
       'keynote' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
@@ -450,6 +494,15 @@ function campsite_session_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 2,
       ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
       'keynote' => array(
         'label' => 'above',
         'settings' => array(),
@@ -502,6 +555,12 @@ function campsite_session_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 6,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
       ),
       'keynote' => array(
         'label' => 'above',

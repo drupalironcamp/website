@@ -1,0 +1,67 @@
+.node-type-session {
+  .region-content {
+    margin-bottom: 3em;
+  }
+  .group-header {
+    background: @brand-primary;
+    color: #FFFFFF;
+    margin-bottom: 3em;
+    padding: 1em 1.5em 0.8em;
+
+    .field-name-field-session-track,
+    .field-name-field-session-experience-level {
+      display: inline-block;
+      margin-right: 0.5em;
+      padding-right: 0.5em;
+
+      .field-label {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    .field-name-field-session-track, {
+      border-right: 1px solid #FFFFFF;
+    }
+  }
+  .group-left {
+    margin-bottom: 3em;
+    text-align: center;
+    width: 100%;
+
+    @media (min-width: @screen-xs-min) {
+      width: 30%;
+    }
+
+    .field-name-field-session-speakers {
+      > .field-items > .field-item {
+        margin-bottom: 1.5em;
+      }
+    }
+
+    .group-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 1em;
+
+      div {
+        display: inline-block;
+        margin-right: 3px;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+      padding: 0 5em;
+      width: 100%;
+
+      @media (min-width: @screen-xs-min) {
+        padding: 0 3em;
+      }
+    }
+  }
+  .group-right {
+    width: 100%;
+    @media (min-width: @screen-xs-min) {
+      width: 70%;
+    }
+  }
+}
