@@ -7154,6 +7154,9 @@ fieldset[disabled] .pane-signup input.button.active {
     width: 30%;
   }
 }
+.node-type-session .group-left .field-name-field-session-speakers > .field-items > .field-item {
+  margin-bottom: 1.5em;
+}
 .node-type-session .group-left .group-name {
   font-size: 20px;
   font-weight: bold;
