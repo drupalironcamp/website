@@ -276,12 +276,12 @@ function campsite_sponsor_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'image_link_formatter',
         'settings' => array(
-          'image_link' => '',
+          'image_link' => 'field_sponsor_link',
           'image_style' => 'sponsors_large',
         ),
-        'type' => 'image',
+        'type' => 'image_link_formatter',
         'weight' => 0,
       ),
     ),
