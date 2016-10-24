@@ -272,3 +272,47 @@ table#top-packages {
     }
   }
 }
+
+table.schedule-table {
+  border: none;
+  font-size: 14px;
+  width: 100%;
+
+  td {
+    border: none;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid @gray-light;
+    padding: 10px 15px;
+    text-align: center;
+
+    &:first-child {
+      border-left: none;
+    }
+    a {
+      font-weight: bold;
+    }
+  }
+
+  tr {
+    &:first-child,
+    &:last-child {
+      td {
+        background: @brand-primary;
+        color: #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:first-child {
+          background: transparent;
+        }
+      }
+    }
+    &:last-child td:first-child {
+      background: @brand-primary;
+    }
+    &:nth-child(2n+2) {
+      background: lighten(@brand-danger, 35%);
+    }
+  }
+}
