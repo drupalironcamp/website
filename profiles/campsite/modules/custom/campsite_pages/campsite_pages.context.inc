@@ -55,6 +55,7 @@ function campsite_pages_context_default_contexts() {
         '/*' => '/*',
         '*' => '*',
         '~program/sessions' => '~program/sessions',
+        '~community/attendees' => '~community/attendees',
       ),
     ),
   );

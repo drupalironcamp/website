@@ -1751,6 +1751,42 @@ table#top-packages tr:nth-child(2) td,
 table#top-packages tr:nth-child(3) td {
   border-left: 1px solid #FFFFFF;
 }
+table.schedule-table {
+  border: none;
+  font-size: 14px;
+  width: 100%;
+}
+table.schedule-table td {
+  border: none;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #777777;
+  padding: 10px 15px;
+  text-align: center;
+}
+table.schedule-table td:first-child {
+  border-left: none;
+}
+table.schedule-table td a {
+  font-weight: bold;
+}
+table.schedule-table tr:first-child td,
+table.schedule-table tr:last-child td {
+  background: #cb085e;
+  color: #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+table.schedule-table tr:first-child td:first-child,
+table.schedule-table tr:last-child td:first-child {
+  background: transparent;
+}
+table.schedule-table tr:last-child td:first-child {
+  background: #cb085e;
+}
+table.schedule-table tr:nth-child(2n+2) {
+  background: #ffe5cf;
+}
 fieldset {
   padding: 0;
   margin: 0;
