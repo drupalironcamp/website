@@ -1,4 +1,4 @@
-sitegroup: drupalironcamp
+sitegroup: drupalironcamp_com
 
 deploy_tasks:
   development:
