@@ -358,7 +358,7 @@
           </div>
         </div>
         <div class="footer-hosting">
-          <?php print t('Hosting powered by ') . l(t('Platform.sh'), 'https://platform.sh'); ?>
+          <?php print t('Hosting powered by ') . l(t('Amazee.io'), 'https://www.amazee.io'); ?>
         </div>
       </div>
       <div class="svg-big-triangle01"></div>
